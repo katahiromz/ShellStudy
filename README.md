@@ -19,8 +19,17 @@
 
 (Under construction)
 
+## References
+
+- Win32 Programmer's Reference
+- [Geoff Chappell, Software Analyst](https://geoffchappell.com/studies/windows/)
+- [Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/learnwin32/learn-to-program-for-windows)
+- [The Old New Thing](https://devblogs.microsoft.com/oldnewthing/)
+
+## License
+
+- MIT
+
 ## Copyright
 
-© 2023 katahiromz
-
-License: MIT
+- Copyright © 2024 katahiromz. All Rights Reserved.

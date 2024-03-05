@@ -12,10 +12,10 @@
 
 ## Table of Contents
 
-- (shell32)[shell32/README.md]
-- (explorer)[explorer/README.md]
-- (browseui)[browseui/README.md]
-- (tools)[tools/README.md]
+- [shell32](shell32/README.md)
+- [explorer](explorer/README.md)
+- [browseui](browseui/README.md)
+- [tools](tools/README.md)
 
 (Under construction)
 

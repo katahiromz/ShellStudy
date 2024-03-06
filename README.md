@@ -15,6 +15,7 @@
 - [shell32](shell32/README.md)
 - [explorer](explorer/README.md)
 - [browseui](browseui/README.md)
+- [interface](interface/README.md)
 - [tools](tools/README.md)
 
 (Under construction)

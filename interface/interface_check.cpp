@@ -11,10 +11,9 @@ static_assert(offsetof(IUnknownVtbl, AddRef) == 0x4, "error");
 static_assert(offsetof(IUnknownVtbl, Release) == 0x8, "error");
 static_assert(sizeof(IUnknownVtbl) == 0xC, "error");
 
-#if 0// private
-static_assert(offsetof(IDocViewSiteVtbl, OnSetTitle) == 0xC, "error");
-static_assert(sizeof(IDocViewSiteVtbl) == 0x10, "error");
-#endif
+// NOTE: C interface of IDocViewSite officially doesn't inherit IUnknown... It seems wrong.
+static_assert(offsetof(IDocViewSiteVtbl, OnSetTitle) == 0xC - sizeof(IUnknownVtbl), "error");
+static_assert(sizeof(IDocViewSiteVtbl) == 0x10 - sizeof(IUnknownVtbl), "error");
 
 static_assert(offsetof(IDropTargetVtbl, DragEnter) == 0xC, "error");
 static_assert(offsetof(IDropTargetVtbl, DragOver) == 0x10, "error");
@@ -45,6 +44,11 @@ static_assert(sizeof(IOleCommandTargetVtbl) == 0x14, "error");
 static_assert(offsetof(IOleWindowVtbl, GetWindow) == 0xC, "error");
 static_assert(offsetof(IOleWindowVtbl, ContextSensitiveHelp) == 0x10, "error");
 static_assert(sizeof(IOleWindowVtbl) == 0x14, "error");
+
+static_assert(offsetof(IPersistIDListVtbl, GetClassID) == 0xC, "error");
+static_assert(offsetof(IPersistIDListVtbl, SetIDList) == 0x10, "error");
+static_assert(offsetof(IPersistIDListVtbl, GetIDList) == 0x14, "error");
+static_assert(sizeof(IPersistIDListVtbl) == 0x18, "error");
 
 static_assert(offsetof(IServiceProviderVtbl, QueryService) == 0xC, "error");
 static_assert(sizeof(IServiceProviderVtbl) == 0x10, "error");

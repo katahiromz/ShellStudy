@@ -49,7 +49,7 @@ static_assert(sizeof(IOleWindowVtbl) == 0x14, "error");
 static_assert(offsetof(IServiceProviderVtbl, QueryService) == 0xC, "error");
 static_assert(sizeof(IServiceProviderVtbl) == 0x10, "error");
 
-// NOTE: IShellFolderViewVtbl officially doesn't inherit IUnknownVtbl... It seems wrong.
+// NOTE: C interface of IShellFolderView officially doesn't inherit IUnknown... It seems wrong.
 static_assert(offsetof(IShellFolderViewVtbl, Rearrange) == 0x0, "error");
 static_assert(offsetof(IShellFolderViewVtbl, GetArrangeParam) == 0x4, "error");
 static_assert(offsetof(IShellFolderViewVtbl, ArrangeGrid) == 0x8, "error");

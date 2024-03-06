@@ -6,6 +6,10 @@
 #include <stdio.h>
 #include <assert.h>
 
+#ifdef _WIN64
+#error This program is for x86.
+#endif
+
 static_assert(offsetof(IUnknownVtbl, QueryInterface) == 0x0, "error");
 static_assert(offsetof(IUnknownVtbl, AddRef) == 0x4, "error");
 static_assert(offsetof(IUnknownVtbl, Release) == 0x8, "error");

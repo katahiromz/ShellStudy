@@ -22,9 +22,9 @@
 
 - [RisohEditor](https://github.com/katahiromz/RisohEditor)
 
-## convguid by katahiromz
+## refguid by katahiromz
 
-- [convguid](https://github.com/katahiromz/convguid)
+- [refguid](https://github.com/katahiromz/refguid)
 
 ---
 

@@ -54,7 +54,7 @@ See:
 - [winxp-shell32.dll-resource](winxp-shell32.dll-resource)
 - [win2k3-shell32.dll-resource](win2k3-shell32.dll-resource)
 
-## What is the major difference between CreateProcess and ShellExecute?
+## What is the major difference between `CreateProcess` and `ShellExecute`?
 
 The major difference between `CreateProcess` and `ShellExecute` lies in
 their intended usage and functionality:

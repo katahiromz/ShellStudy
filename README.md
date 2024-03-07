@@ -298,6 +298,23 @@ and it continues to be an important part of the Windows platform.
 
 See also `REF005`.
 
+## What are the well-known GUIDs?
+
+Here are some examples of well-known GUIDs:
+
+- `IID_IUnknown`: `{00000000-0000-0000-C000-000000000046}` - This GUID
+   represents the interface identifier for the `IUnknown` interface in COM,
+   which is the base interface for all COM interfaces.
+- `IID_IDispatch`: `{00020400-0000-0000-C000-000000000046}` - This GUID
+   represents the interface identifier for the `IDispatch` interface in COM,
+   which provides late-bound access to COM objects through automation.
+- `IID_IStream`: `{0000000C-0000-0000-C000-000000000046}` - This GUID
+   represents the interface identifier for the `IStream` interface in COM,
+   which is used for reading from and writing to streams of data.
+- `GUID_NULL`: `{00000000-0000-0000-0000-000000000000}` - This GUID
+   represents a null or empty GUID, often used to indicate the absence of a
+   meaningful GUID value.
+
 ## What are the essential functions of COM?
 
 Some of the key functions and concepts of COM include:

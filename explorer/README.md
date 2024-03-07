@@ -13,6 +13,11 @@ See:
 
 - [$(REACTOS)/base/shell/explorer](https://github.com/reactos/reactos/tree/master/base/shell/explorer) .
 
+## `dumpbin /imports /exports`
+
+- [winxp-explorer.exe.dumpbin.txt](winxp-explorer.exe.dumpbin.txt)
+- [win2k3-explorer.exe.dumpbin.txt](win2k3-explorer.exe.dumpbin.txt)
+
 ---
 
 [Back](../README.md)

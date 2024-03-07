@@ -40,9 +40,12 @@ See:
 
 - [$(REACTOS)/dll/win32/shell32](https://github.com/reactos/reactos/tree/master/dll/win32/shell32) .
 
-## Where is the function list of `shell32.dll`?
+## `dumpbin /imports /exports`
 
-See:
+- [winxp-shell32.dll.dumpbin.txt](winxp-shell32.dll.dumpbin.txt)
+- [win2k3-shell32.dll.dumpbin.txt](win2k3-shell32.dll.dumpbin.txt)
+
+See also:
 
 - [$(REACTOS)/dll/win32/shell32/shell32.spec](https://github.com/reactos/reactos/tree/master/dll/win32/shell32/shell32.spec)
 

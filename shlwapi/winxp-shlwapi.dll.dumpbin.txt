@@ -1,0 +1,1735 @@
+Microsoft (R) COFF/PE Dumper Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file shlwapi.dll
+
+File Type: DLL
+
+  Section contains the following exports for SHLWAPI.dll
+
+    00000000 characteristics
+    48025CF1 time date stamp Mon Apr 14 04:20:17 2008
+        0.00 version
+           1 ordinal base
+         858 number of functions
+         314 number of names
+
+    ordinal hint RVA      name
+
+        356    0 00009E69 AssocCreate
+        500    1 000110A3 AssocGetPerceivedType
+        501    2 00013C93 AssocIsDangerous
+        502    3 0005006D AssocQueryKeyA
+        503    4 0000A5AE AssocQueryKeyW
+        504    5 0004FE1D AssocQueryStringA
+        566    6 0004FF58 AssocQueryStringByKeyA
+        567    7 0000B120 AssocQueryStringByKeyW
+        568    8 0001A78E AssocQueryStringW
+        569    9 0002C435 ChrCmpIA
+        570    A 00007E0A ChrCmpIW
+        571    B 00041284 ColorAdjustLuma
+        572    C 00018B82 ColorHLSToRGB
+        573    D 00018AD7 ColorRGBToHLS
+        547    E 00066B95 DelayLoadFailureHook
+        574    F 00065AE9 DllGetVersion
+         14   10 0005DDF5 GetAcceptLanguagesA
+         15   11 0002CAF2 GetAcceptLanguagesW
+        575   12 000172B9 GetMenuPosFromID
+        576   13 00023842 HashData
+        577   14 0004488D IntlStrEqWorkerA
+        578   15 0000760D IntlStrEqWorkerW
+        579   16 0004607D IsCharSpaceA
+         29   17 000158A5 IsCharSpaceW
+        580   18 0001054D PathAddBackslashA
+        581   19 00006E8D PathAddBackslashW
+        582   1A 00048F03 PathAddExtensionA
+        583   1B 000152EB PathAddExtensionW
+        584   1C 000190FC PathAppendA
+        585   1D 00007ACD PathAppendW
+        586   1E 00007434 PathBuildRootA
+        587   1F 0000403E PathBuildRootW
+        588   20 00018FEB PathCanonicalizeA
+        589   21 00007881 PathCanonicalizeW
+        590   22 00019140 PathCombineA
+        591   23 000079C9 PathCombineW
+        592   24 000471A7 PathCommonPrefixA
+        593   25 0000752A PathCommonPrefixW
+        594   26 0004840D PathCompactPathA
+        595   27 000490F9 PathCompactPathExA
+        596   28 00051AF2 PathCompactPathExW
+        597   29 00051535 PathCompactPathW
+        598   2A 00022F75 PathCreateFromUrlA
+        599   2B 0001EF75 PathCreateFromUrlW
+        600   2C 0004704F PathFileExistsA
+        601   2D 00007D89 PathFileExistsW
+        602   2E 00020FAE PathFindExtensionA
+        603   2F 00006859 PathFindExtensionW
+        604   30 0000C19C PathFindFileNameA
+        605   31 00007077 PathFindFileNameW
+        606   32 00047720 PathFindNextComponentA
+        607   33 0001BED9 PathFindNextComponentW
+        608   34 00048EE8 PathFindOnPathA
+        609   35 000186DF PathFindOnPathW
+        610   36 000470BB PathFindSuffixArrayA
+        611   37 00050FDD PathFindSuffixArrayW
+        612   38 00046FD2 PathGetArgsA
+        613   39 000141D1 PathGetArgsW
+        614   3A 00047A4C PathGetCharTypeA
+        615   3B 0001C1E6 PathGetCharTypeW
+        616   3C 00047404 PathGetDriveNumberA
+        617   3D 00006BDA PathGetDriveNumberW
+        618   3E 000479CC PathIsContentTypeA
+        619   3F 000230A1 PathIsContentTypeW
+        620   40 00047578 PathIsDirectoryA
+        621   41 00048344 PathIsDirectoryEmptyA
+        622   42 0005146A PathIsDirectoryEmptyW
+        623   43 0001AE59 PathIsDirectoryW
+        624   44 0004738A PathIsFileSpecA
+        625   45 0001295E PathIsFileSpecW
+        626   46 00047C99 PathIsLFNFileSpecA
+        627   47 0005129A PathIsLFNFileSpecW
+        628   48 000482DF PathIsNetworkPathA
+        629   49 00007DC3 PathIsNetworkPathW
+        630   4A 000472AC PathIsPrefixA
+        631   4B 0001430C PathIsPrefixW
+        632   4C 00019261 PathIsRelativeA
+        633   4D 000067D2 PathIsRelativeW
+        634   4E 000474F9 PathIsRootA
+        635   4F 00007466 PathIsRootW
+        636   50 0004794D PathIsSameRootA
+        637   51 0005111F PathIsSameRootW
+        638   52 00021428 PathIsSystemFolderA
+        639   53 00051260 PathIsSystemFolderW
+        640   54 00018F35 PathIsUNCA
+        641   55 000235F9 PathIsUNCServerA
+        642   56 000473BD PathIsUNCServerShareA
+        643   57 00007F89 PathIsUNCServerShareW
+        644   58 00007F63 PathIsUNCServerW
+        645   59 00006E6F PathIsUNCW
+        646   5A 00047995 PathIsURLA
+        647   5B 0000BB91 PathIsURLW
+        648   5C 0004805D PathMakePrettyA
+        649   5D 00020C8C PathMakePrettyW
+        650   5E 00048812 PathMakeSystemFolderA
+        651   5F 00004AAF PathMakeSystemFolderW
+        652   60 00047898 PathMatchSpecA
+        653   61 00012826 PathMatchSpecW
+        654   62 0004879C PathParseIconLocationA
+        655   63 0000B09D PathParseIconLocationW
+        656   64 000476CC PathQuoteSpacesA
+        657   65 00051067 PathQuoteSpacesW
+        658   66 00048F8A PathRelativePathToA
+        659   67 0001BF21 PathRelativePathToW
+        660   68 00047016 PathRemoveArgsA
+        661   69 0001420B PathRemoveArgsW
+        662   6A 00048255 PathRemoveBackslashA
+        663   6B 000074BF PathRemoveBackslashW
+        664   6C 000481F8 PathRemoveBlanksA
+        665   6D 0000B01C PathRemoveBlanksW
+        666   6E 0004715E PathRemoveExtensionA
+        667   6F 000068F3 PathRemoveExtensionW
+        668   70 0004730C PathRemoveFileSpecA
+        669   71 00007C56 PathRemoveFileSpecW
+        670   72 000481A2 PathRenameExtensionA
+        671   73 00051412 PathRenameExtensionW
+        672   74 0004747C PathSearchAndQualifyA
+        673   75 00020FF3 PathSearchAndQualifyW
+        674   76 000486C5 PathSetDlgItemPathA
+        675   77 000517E9 PathSetDlgItemPathW
+        676   78 000478E8 PathSkipRootA
+        677   79 000510C2 PathSkipRootW
+        678   7A 00048317 PathStripPathA
+        679   7B 0001AAED PathStripPathW
+        680   7C 000482AD PathStripToRootA
+        681   7D 000083F5 PathStripToRootW
+        682   7E 00049477 PathUnExpandEnvStringsA
+        683   7F 00051E69 PathUnExpandEnvStringsW
+        684   80 00047CF8 PathUndecorateA
+        685   81 0002CF15 PathUndecorateW
+        686   82 00047C3B PathUnmakeSystemFolderA
+        687   83 00051226 PathUnmakeSystemFolderW
+        688   84 0004768E PathUnquoteSpacesA
+        689   85 0000AFBF PathUnquoteSpacesW
+          7   86 0000B5F1 SHAllocShared
+        690   87 0001D63F SHAutoComplete
+        691   88 000415F4 SHCopyKeyA
+        692   89 0004185A SHCopyKeyW
+        693   8A 00011940 SHCreateShellPalette
+        694   8B 00060231 SHCreateStreamOnFileA
+        695   8C 0001A1A6 SHCreateStreamOnFileEx
+        696   8D 0000B899 SHCreateStreamOnFileW
+        697   8E 00067B2B SHCreateStreamWrapper
+         16   8F 000173A6 SHCreateThread
+        698   90 00017CC0 SHCreateThreadRef
+        699   91 000418D5 SHDeleteEmptyKeyA
+        700   92 000418E5 SHDeleteEmptyKeyW
+        701   93 00018511 SHDeleteKeyA
+        702   94 00016F94 SHDeleteKeyW
+        703   95 000418D5 SHDeleteOrphanKeyA
+        704   96 000418E5 SHDeleteOrphanKeyW
+        705   97 000415B1 SHDeleteValueA
+        706   98 0001C341 SHDeleteValueW
+        707   99 00041949 SHEnumKeyExA
+        708   9A 000150F8 SHEnumKeyExW
+        709   9B 0004196F SHEnumValueA
+        710   9C 0001D551 SHEnumValueW
+         10   9D 0000B559 SHFreeShared
+        711   9E 00024274 SHGetInverseCMAP
+        712   9F 00012694 SHGetThreadRef
+        713   A0 000100C3 SHGetValueA
+        714   A1 00004587 SHGetValueW
+        515   A2 0001B66E SHGetViewStatePropertyBag
+        715   A3 00056EC9 SHIsLowMemoryMachine
+        487   A4 0000BEAE SHLoadIndirectString
+          8   A5 0001C287 SHLockShared
+        716   A6 0001B084 SHOpenRegStream2A
+        717   A7 000124BA SHOpenRegStream2W
+        718   A8 0001BC1C SHOpenRegStreamA
+        719   A9 000623BE SHOpenRegStreamW
+        720   AA 0004199A SHQueryInfoKeyA
+        721   AB 000106FC SHQueryInfoKeyW
+        722   AC 000101EB SHQueryValueExA
+        723   AD 00006F2E SHQueryValueExW
+        724   AE 00008AD8 SHRegCloseUSKey
+        725   AF 000176EF SHRegCreateUSKeyA
+        726   B0 00017687 SHRegCreateUSKeyW
+        727   B1 00041BA3 SHRegDeleteEmptyUSKeyA
+        728   B2 00041C4A SHRegDeleteEmptyUSKeyW
+        729   B3 00041A97 SHRegDeleteUSValueA
+        730   B4 00041B40 SHRegDeleteUSValueW
+        731   B5 0000A53F SHRegDuplicateHKey
+        732   B6 00041CAD SHRegEnumUSKeyA
+        733   B7 00015061 SHRegEnumUSKeyW
+        734   B8 00041D37 SHRegEnumUSValueA
+        735   B9 00041DD7 SHRegEnumUSValueW
+        736   BA 0001D48F SHRegGetBoolUSValueA
+        737   BB 00008F94 SHRegGetBoolUSValueW
+        738   BC 000422D4 SHRegGetPathA
+        739   BD 00042301 SHRegGetPathW
+        740   BE 0001A852 SHRegGetUSValueA
+        741   BF 00008CF2 SHRegGetUSValueW
+        742   C0 0001002A SHRegGetValueA
+        743   C1 0000431F SHRegGetValueW
+        744   C2 00008B49 SHRegOpenUSKeyA
+        745   C3 00008C8A SHRegOpenUSKeyW
+        746   C4 00041E77 SHRegQueryInfoUSKeyA
+        747   C5 0001064D SHRegQueryInfoUSKeyW
+        748   C6 0001518E SHRegQueryUSValueA
+        749   C7 00008E75 SHRegQueryUSValueW
+        750   C8 00041F8E SHRegSetPathA
+        751   C9 00041F00 SHRegSetPathW
+        752   CA 0004271F SHRegSetUSValueA
+        753   CB 00018A8B SHRegSetUSValueW
+        754   CC 0004206D SHRegWriteUSValueA
+        755   CD 00014F7D SHRegWriteUSValueW
+        756   CE 0005611D SHRegisterValidateTemplate
+        757   CF 00056E68 SHReleaseThreadRef
+        758   D0 00017C86 SHSetThreadRef
+        759   D1 0001689B SHSetValueA
+        760   D2 0000975F SHSetValueW
+        761   D3 000201A0 SHSkipJunction
+        762   D4 00044B70 SHStrDupA
+        763   D5 00006C63 SHStrDupW
+          9   D6 0000B53E SHUnlockShared
+        764   D7 000446F4 StrCSpnA
+        765   D8 0004473E StrCSpnIA
+        766   D9 00044CA7 StrCSpnIW
+        767   DA 00017363 StrCSpnW
+        768   DB 0002328C StrCatBuffA
+        769   DC 00006B50 StrCatBuffW
+        770   DD 00044BCC StrCatChainW
+        771   DE 00010486 StrCatW
+        772   DF 0001A9D2 StrChrA
+        773   E0 0002C47D StrChrIA
+        774   E1 00007E40 StrChrIW
+        775   E2 00044C1B StrChrNIW
+        776   E3 0004449C StrChrNW
+        777   E4 000066BD StrChrW
+        155   E5 00022E5E StrCmpCA
+        156   E6 00006919 StrCmpCW
+        157   E7 00006FF0 StrCmpICA
+        158   E8 00006FA8 StrCmpICW
+        778   E9 00006A8E StrCmpIW
+        779   EA 00008495 StrCmpLogicalW
+        780   EB 00020A65 StrCmpNA
+        781   EC 000107A6 StrCmpNIA
+        782   ED 00006F84 StrCmpNIW
+        783   EE 00006DE8 StrCmpNW
+        784   EF 00007126 StrCmpW
+        785   F0 00006753 StrCpyNW
+        786   F1 0000682A StrCpyW
+        787   F2 0002CEC4 StrDupA
+        788   F3 00006772 StrDupW
+        789   F4 00044F6F StrFormatByteSize64A
+        790   F5 00044FB5 StrFormatByteSizeA
+        791   F6 0001C4AB StrFormatByteSizeW
+        792   F7 00044931 StrFormatKBSizeA
+        793   F8 0001FC81 StrFormatKBSizeW
+        794   F9 00045250 StrFromTimeIntervalA
+        795   FA 000452BB StrFromTimeIntervalW
+        796   FB 0004488D StrIsIntlEqualA
+        797   FC 0000760D StrIsIntlEqualW
+        798   FD 000215CF StrNCatA
+        799   FE 0002CD55 StrNCatW
+        800   FF 00044534 StrPBrkA
+        801  100 00021059 StrPBrkW
+        802  101 00010300 StrRChrA
+        803  102 000444CF StrRChrIA
+        804  103 00044C5F StrRChrIW
+        805  104 0000B05E StrRChrW
+        806  105 00044788 StrRStrIA
+        807  106 0001385D StrRStrIW
+        808  107 00044A39 StrRetToBSTR
+        809  108 00044AF1 StrRetToBufA
+        810  109 00006D2F StrRetToBufW
+        811  10A 00045011 StrRetToStrA
+        812  10B 00012613 StrRetToStrW
+        813  10C 00044630 StrSpnA
+        814  10D 0004469A StrSpnW
+        815  10E 00014EE6 StrStrA
+        816  10F 0002C4CE StrStrIA
+        817  110 00007E7C StrStrIW
+        818  111 00044CED StrStrNIW
+        819  112 0004481C StrStrNW
+        820  113 00006E0C StrStrW
+        821  114 00044584 StrToInt64ExA
+        822  115 0001BB30 StrToInt64ExW
+        823  116 00016A35 StrToIntA
+        824  117 00044603 StrToIntExA
+        825  118 0001BB03 StrToIntExW
+        826  119 0000AF74 StrToIntW
+        827  11A 00044980 StrTrimA
+        828  11B 00012EE7 StrTrimW
+        829  11C 0005FAAF UrlApplySchemeA
+        830  11D 0005FB8A UrlApplySchemeW
+        831  11E 00016825 UrlCanonicalizeA
+        832  11F 0001F641 UrlCanonicalizeW
+        833  120 00016670 UrlCombineA
+        834  121 0001F749 UrlCombineW
+        835  122 0005ED6D UrlCompareA
+        836  123 000239CD UrlCompareW
+        837  124 0005F9C2 UrlCreateFromPathA
+        838  125 0001D3B2 UrlCreateFromPathW
+        839  126 0005F73D UrlEscapeA
+        840  127 00021A35 UrlEscapeW
+        841  128 00021EBD UrlGetLocationA
+        842  129 000225A7 UrlGetLocationW
+        843  12A 0005F82A UrlGetPartA
+        844  12B 0000CC95 UrlGetPartW
+        845  12C 0005EE82 UrlHashA
+        846  12D 0005EEBD UrlHashW
+        847  12E 0005FF09 UrlIsA
+        848  12F 0005FFE6 UrlIsNoHistoryA
+        849  130 0001D46A UrlIsNoHistoryW
+        850  131 0005FFCE UrlIsOpaqueA
+        851  132 00023212 UrlIsOpaqueW
+        852  133 0000BCAC UrlIsW
+        853  134 0005F930 UrlUnescapeA
+        854  135 0001F4FC UrlUnescapeW
+        855  136 0000827C wnsprintfA
+        856  137 000093E6 wnsprintfW
+        857  138 00008002 wvnsprintfA
+        858  139 000091F1 wvnsprintfW
+          1      00021DCE [NONAME]
+          2      0000BB02 [NONAME]
+          3      00048B8E [NONAME]
+          4      000187DF [NONAME]
+          5      00048C41 [NONAME]
+          6      0001531A [NONAME]
+         11      0000B4B0 [NONAME]
+         12      000184CA [NONAME]
+         13      00022C34 [NONAME]
+         17      0001BD3B [NONAME]
+         18      0001A31B [NONAME]
+         19      0000B87E [NONAME]
+         20      0000B800 [NONAME]
+         21      0000B7DF [NONAME]
+         22      0001A2E1 [NONAME]
+         23      00008562 [NONAME]
+         24      00004D01 [NONAME]
+         25      000227A5 [NONAME]
+         26      000454C4 [NONAME]
+         27      00045605 [NONAME]
+         28      00022955 [NONAME]
+         30      0004548D [NONAME]
+         31      00045325 [NONAME]
+         32      00045465 [NONAME]
+         33      00022666 [NONAME]
+         34      000228E5 [NONAME]
+         35      00045745 [NONAME]
+         36      0004F7FF [NONAME]
+         37      000216D0 [NONAME]
+         38      0000CBF8 [NONAME]
+         39      000497F3 [NONAME]
+         40      0001D442 [NONAME]
+         41      000067B5 [NONAME]
+         42      0004BBCB [NONAME]
+         43      0001A834 [NONAME]
+         44      00049A50 [NONAME]
+         45      00006A0B [NONAME]
+         46      00049DF7 [NONAME]
+         47      00049E11 [NONAME]
+         48      0004BD73 [NONAME]
+         49      000170EE [NONAME]
+         50      0004BDDD [NONAME]
+         51      0001A932 [NONAME]
+         52      00007FAF [NONAME]
+         53      000232F9 [NONAME]
+         54      0004BDA8 [NONAME]
+         55      0001A6DE [NONAME]
+         56      0000776D [NONAME]
+         57      0004BE44 [NONAME]
+         58      00049E73 [NONAME]
+         59      00049EBB [NONAME]
+         60      00022A35 [NONAME]
+         61      0004BEA6 [NONAME]
+         62      0004BF42 [NONAME]
+         63      000233A4 [NONAME]
+         64      00049FA9 [NONAME]
+         65      00022E88 [NONAME]
+         66      0001AAA6 [NONAME]
+         67      0001AB1A [NONAME]
+         68      0004C440 [NONAME]
+         69      0001A4E1 [NONAME]
+         70      0004A10B [NONAME]
+         71      0002186A [NONAME]
+         72      0004C5CE [NONAME]
+         73      0001F2DD [NONAME]
+         74      0004F826 [NONAME]
+         75      00007D4E [NONAME]
+         76      0001AA2E [NONAME]
+         77      0001C651 [NONAME]
+         78      0004D271 [NONAME]
+         79      00021729 [NONAME]
+         80      0001A5A1 [NONAME]
+         81      0001865B [NONAME]
+         82      0004C64D [NONAME]
+         83      0001A566 [NONAME]
+         84      000104BF [NONAME]
+         85      0004CB47 [NONAME]
+         86      0004CBE9 [NONAME]
+         87      000216E8 [NONAME]
+         88      0004CACB [NONAME]
+         89      0004CCC9 [NONAME]
+         90      0004CD7A [NONAME]
+         91      0004CDF8 [NONAME]
+         92      00023360 [NONAME]
+         93      000232CC [NONAME]
+         94      00007785 [NONAME]
+         95      00021777 [NONAME]
+         96      00021759 [NONAME]
+         97      00018699 [NONAME]
+         98      0004D3D4 [NONAME]
+         99      0004A1E1 [NONAME]
+        100      0002CC6B [NONAME]
+        101      0004A1FB [NONAME]
+        102      0001A8FF [NONAME]
+        103      0004A21C [NONAME]
+        104      00010500 [NONAME]
+        105      000089AC [NONAME]
+        106      0004D20B [NONAME]
+        107      00007734 [NONAME]
+        108      0004D5FA [NONAME]
+        109      0004D71D [NONAME]
+        110      00023331 [NONAME]
+        111      0004D69D [NONAME]
+        112      0004D795 [NONAME]
+        113      0004D81E [NONAME]
+        114      0004D8A1 [NONAME]
+        115      0004D980 [NONAME]
+        116      00007145 [NONAME]
+        117      0002258F [NONAME]
+        118      00021741 [NONAME]
+        119      0004D9DB [NONAME]
+        120      000094C9 [NONAME]
+        121      00020EC9 [NONAME]
+        122      00010996 [NONAME]
+        123      00010733 [NONAME]
+        124      0002C52C [NONAME]
+        125      000040F2 [NONAME]
+        126      00010868 [NONAME]
+        127      0004DA49 [NONAME]
+        128      0000425E [NONAME]
+        129      0004DB2E [NONAME]
+        130      0000768E [NONAME]
+        131      0001A751 [NONAME]
+        132      00024239 [NONAME]
+        133      00011A16 [NONAME]
+        134      00021811 [NONAME]
+        135      0004F861 [NONAME]
+        136      00007755 [NONAME]
+        137      0004E2C9 [NONAME]
+        138      0004F89A [NONAME]
+        139      0004E657 [NONAME]
+        140      000218AE [NONAME]
+        141      0001A8B7 [NONAME]
+        142      00021852 [NONAME]
+        143      0004E32B [NONAME]
+        144      0004E961 [NONAME]
+        145      0002C573 [NONAME]
+        146      0004B531 [NONAME]
+        147      000208BD [NONAME]
+        148      0004E3A5 [NONAME]
+        149      0004E410 [NONAME]
+        150      0004B54B [NONAME]
+        151      00014C97 [NONAME]
+        152      0000C689 [NONAME]
+        153      0000BBC8 [NONAME]
+        154      0001A950 [NONAME]
+        159      0004D5AF [NONAME]
+        160      00060C8E [NONAME]
+        161      00060791 [NONAME]
+        162      0001B447 [NONAME]
+        163      00015FD5 [NONAME]
+        164      000090E9 [NONAME]
+        165      000194B1 [NONAME]
+        166      00017B69 [NONAME]
+        167      0002CCE1 [NONAME]
+        168      000234F6 [NONAME]
+        169      0000832A [NONAME]
+        170      00047C76 [NONAME]
+        171      00015C75 [NONAME]
+        172      00015CE3 [NONAME]
+        173      0001BC43 [NONAME]
+        174      00007C21 [NONAME]
+        175      000099EA [NONAME]
+        176      00008390 [NONAME]
+        177      000571DF [NONAME]
+        178      000126C0 [NONAME]
+        179      0005722A [NONAME]
+        180      0005727D [NONAME]
+        181      000572BA [NONAME]
+        182      000572DD [NONAME]
+        183      0005733D [NONAME]
+        184      0000C266 [NONAME]
+        185      00057975 [NONAME]
+        186      00057C24 [NONAME]
+        187      00016AB9 [NONAME]
+        188      00057C9E [NONAME]
+        189      0002359D [NONAME]
+        190      00057CEA [NONAME]
+        191      000578EB [NONAME]
+        192      0001C464 [NONAME]
+        193      0000C22E [NONAME]
+        194      0001AEB0 [NONAME]
+        195      00057D61 [NONAME]
+        196      00068450 [NONAME]
+        197      0001CA99 [NONAME]
+        198      00057DEF [NONAME]
+        199      00007032 [NONAME]
+        200      0005718D [NONAME]
+        201      00018EBE [NONAME]
+        202      00018EE7 [NONAME]
+        203      00057E26 [NONAME]
+        204      000076DE [NONAME]
+        205      00042019 [NONAME]
+        206      00042043 [NONAME]
+        207      00057E90 [NONAME]
+        208      000175C3 [NONAME]
+        209      000413D2 [NONAME]
+        210      00018A0E [NONAME]
+        211      000189DA [NONAME]
+        212      0000C311 [NONAME]
+        213      00017D29 [NONAME]
+        214      00017E87 [NONAME]
+        215      00006948 [NONAME]
+        216      00006966 [NONAME]
+        217      0000413F [NONAME]
+        218      0000415D [NONAME]
+        219      00004076 [NONAME]
+        220      00057F84 [NONAME]
+        221      00058036 [NONAME]
+        222      00005050 [NONAME]
+        223      00006AC9 [NONAME]
+        224      00063240 [NONAME]
+        225      00017205 [NONAME]
+        226      000559AB [NONAME]
+        227      00055988 [NONAME]
+        228      00055933 [NONAME]
+        229      0005590E [NONAME]
+        230      000558A7 [NONAME]
+        231      000140CB [NONAME]
+        232      00055831 [NONAME]
+        233      000140F8 [NONAME]
+        234      00055A69 [NONAME]
+        235      00055A00 [NONAME]
+        236      000089F0 [NONAME]
+        237      0001A6A8 [NONAME]
+        238      00057376 [NONAME]
+        239      0001A528 [NONAME]
+        240      0000779D [NONAME]
+        241      0000502E [NONAME]
+        242      00042FFD [NONAME]
+        243      000439DB [NONAME]
+        244      000439FF [NONAME]
+        245      00043ADB [NONAME]
+        246      00043CB7 [NONAME]
+        247      000441B7 [NONAME]
+        248      0004428D [NONAME]
+        249      00044346 [NONAME]
+        250      00042DAE [NONAME]
+        251      00044002 [NONAME]
+        252      00043FE3 [NONAME]
+        253      00043A65 [NONAME]
+        254      00043A75 [NONAME]
+        255      00042E03 [NONAME]
+        256      00018C34 [NONAME]
+        257      0005806A [NONAME]
+        258      00065459 [NONAME]
+        259      0006521F [NONAME]
+        260      0000959F [NONAME]
+        261      00061143 [NONAME]
+        262      0006114E [NONAME]
+        263      0006115F [NONAME]
+        264      00061170 [NONAME]
+        265      00061181 [NONAME]
+        266      00006CF7 [NONAME]
+        267      00008968 [NONAME]
+        268      00008369 [NONAME]
+        269      00007243 [NONAME]
+        270      00007204 [NONAME]
+        271      0000C0D9 [NONAME]
+        272      00061AF1 [NONAME]
+        273      000620F5 [NONAME]
+        274      00058245 [NONAME]
+        275      00058263 [NONAME]
+        276      000233F7 [NONAME]
+        277      00058411 [NONAME]
+        278      0001961B [NONAME]
+        279      0005941D [NONAME]
+        280      00042269 [NONAME]
+        281      00015F04 [NONAME]
+        282      000225FE [NONAME]
+        283      00015F92 [NONAME]
+        284      00015ED4 [NONAME]
+        285      00022A00 [NONAME]
+        286      00022D6E [NONAME]
+        287      000229C1 [NONAME]
+        288      0001BA11 [NONAME]
+        289      00022E09 [NONAME]
+        290      000462F7 [NONAME]
+        291      00057B0A [NONAME]
+        292      00057A8B [NONAME]
+        293      00061B03 [NONAME]
+        294      0000B40B [NONAME]
+        295      00059BC4 [NONAME]
+        296      000598AD [NONAME]
+        297      0005991B [NONAME]
+        298      00019818 [NONAME]
+        299      0002112C [NONAME]
+        300      00018BD2 [NONAME]
+        301      0004E5A0 [NONAME]
+        302      0004B652 [NONAME]
+        303      0004B7E0 [NONAME]
+        304      0004E763 [NONAME]
+        305      00019AEE [NONAME]
+        306      00006B92 [NONAME]
+        307      0001B9C0 [NONAME]
+        308      000231C0 [NONAME]
+        309      0001A5E5 [NONAME]
+        310      0001F954 [NONAME]
+        311      0001F9A4 [NONAME]
+        312      0000B1C9 [NONAME]
+        313      0004E7C5 [NONAME]
+        314      0002C5B9 [NONAME]
+        315      0004E8B9 [NONAME]
+        316      00020E63 [NONAME]
+        317      00020E19 [NONAME]
+        318      0004EA39 [NONAME]
+        319      0004BFDC [NONAME]
+        320      0005DE4F [NONAME]
+        321      0005DE84 [NONAME]
+        322      0005DE05 [NONAME]
+        323      0005DE2A [NONAME]
+        324      0005DFCE [NONAME]
+        325      0005E037 [NONAME]
+        326      0005E0A3 [NONAME]
+        327      0005E113 [NONAME]
+        328      0005DEBC [NONAME]
+        329      0005DF51 [NONAME]
+        330      0005E2FD [NONAME]
+        331      0005E36F [NONAME]
+        332      000497D9 [NONAME]
+        333      0004C753 [NONAME]
+        334      00023060 [NONAME]
+        335      00017D5D [NONAME]
+        336      0004C813 [NONAME]
+        337      0004C8EB [NONAME]
+        338      0004C9D3 [NONAME]
+        339      0001C887 [NONAME]
+        340      0004CA3B [NONAME]
+        341      0004A17A [NONAME]
+        342      0000894D [NONAME]
+        343      000420F0 [NONAME]
+        344      0000AA6C [NONAME]
+        345      0004614E [NONAME]
+        346      00006808 [NONAME]
+        347      0001C3C1 [NONAME]
+        348      00013459 [NONAME]
+        349      00046ADA [NONAME]
+        350      000132F6 [NONAME]
+        351      00013341 [NONAME]
+        352      00013392 [NONAME]
+        353      00052081 [NONAME]
+        354      0001FA0F [NONAME]
+        355      00056FA1 [NONAME]
+        357      0004EB59 [NONAME]
+        358      0004EAD7 [NONAME]
+        359      0004D912 [NONAME]
+        360      0004DBC4 [NONAME]
+        361      000241F5 [NONAME]
+        362      000109DD [NONAME]
+        363      0005935D [NONAME]
+        364      00046861 [NONAME]
+        365      000073B4 [NONAME]
+        366      0001D5C8 [NONAME]
+        367      0004EC46 [NONAME]
+        368      0004ECF1 [NONAME]
+        369      0004ED9C [NONAME]
+        370      0004EF68 [NONAME]
+        371      0004B8F7 [NONAME]
+        372      0004EFD7 [NONAME]
+        373      0004F047 [NONAME]
+        374      00058BA1 [NONAME]
+        375      00058B37 [NONAME]
+        376      00011A76 [NONAME]
+        377      0005A2E8 [NONAME]
+        378      0001FE73 [NONAME]
+        379      0004C965 [NONAME]
+        380      0004A125 [NONAME]
+        381      000509EC [NONAME]
+        382      00055C89 [NONAME]
+        383      00055D88 [NONAME]
+        384      00057BF9 [NONAME]
+        385      00056CFE [NONAME]
+        386      00056D72 [NONAME]
+        387      00056DCD [NONAME]
+        388      0005DCCB [NONAME]
+        389      0004F9B8 [NONAME]
+        390      0004E483 [NONAME]
+        391      0004E4E7 [NONAME]
+        392      0005AC11 [NONAME]
+        393      00049E2B [NONAME]
+        394      0001BC9B [NONAME]
+        395      0005AD96 [NONAME]
+        396      0005AD29 [NONAME]
+        397      0005AE92 [NONAME]
+        398      0005ADF3 [NONAME]
+        399      00044457 [NONAME]
+        400      000066FF [NONAME]
+        401      0004F49B [NONAME]
+        402      0004F372 [NONAME]
+        403      0004FB92 [NONAME]
+        404      000128AC [NONAME]
+        405      0005B1AB [NONAME]
+        406      0005B013 [NONAME]
+        407      00050683 [NONAME]
+        408      00050460 [NONAME]
+        409      00050C17 [NONAME]
+        410      00050E50 [NONAME]
+        411      00050EC6 [NONAME]
+        412      00046633 [NONAME]
+        413      000103F5 [NONAME]
+        414      00058D2B [NONAME]
+        415      00058D79 [NONAME]
+        416      00058DC7 [NONAME]
+        417      00058E0A [NONAME]
+        418      000236A7 [NONAME]
+        419      0004F1AA [NONAME]
+        420      00058E4E [NONAME]
+        421      00058E5B [NONAME]
+        422      000050DE [NONAME]
+        423      00005096 [NONAME]
+        424      00063266 [NONAME]
+        425      0004A51D [NONAME]
+        426      0004A566 [NONAME]
+        427      0004AEDA [NONAME]
+        428      0004AF6D [NONAME]
+        429      0005A336 [NONAME]
+        430      0001FF95 [NONAME]
+        431      000236C0 [NONAME]
+        432      00058E89 [NONAME]
+        433      00017C2C [NONAME]
+        434      00017C6E [NONAME]
+        435      0004BA24 [NONAME]
+        436      00021C72 [NONAME]
+        437      000048D4 [NONAME]
+        438      0005332B [NONAME]
+        439      0000BF88 [NONAME]
+        440      0005B24B [NONAME]
+        441      00059F8A [NONAME]
+        442      0004CE8B [NONAME]
+        443      0005830C [NONAME]
+        444      00058281 [NONAME]
+        445      000480BB [NONAME]
+        446      00007ED6 [NONAME]
+        447      00047455 [NONAME]
+        448      00012922 [NONAME]
+        449      00048BC4 [NONAME]
+        450      00051A6F [NONAME]
+        451      00048021 [NONAME]
+        452      000513D6 [NONAME]
+        453      00048000 [NONAME]
+        454      000513B5 [NONAME]
+        455      00047AB5 [NONAME]
+        456      00007B16 [NONAME]
+        457      000142BD [NONAME]
+        458      0004F58B [NONAME]
+        459      0004F99A [NONAME]
+        460      00006DCA [NONAME]
+        461      000068A4 [NONAME]
+        462      0005F0E9 [NONAME]
+        463      0004F8C5 [NONAME]
+        464      00006D7F [NONAME]
+        465      0004934C [NONAME]
+        466      00051CF1 [NONAME]
+        467      000426BB [NONAME]
+        468      000425E1 [NONAME]
+        469      000424A5 [NONAME]
+        470      00058ECC [NONAME]
+        471      000199E3 [NONAME]
+        472      00014246 [NONAME]
+        473      0000B197 [NONAME]
+        474      000197EE [NONAME]
+        475      00005E99 [NONAME]
+        476      0000880D [NONAME]
+        477      0006317D [NONAME]
+        478      00056F12 [NONAME]
+        479      0001940A [NONAME]
+        480      00023C49 [NONAME]
+        481      00056F5B [NONAME]
+        482      00064A8C [NONAME]
+        483      00064B30 [NONAME]
+        484      0001B990 [NONAME]
+        485      000601E6 [NONAME]
+        486      0000C297 [NONAME]
+        488      00058F26 [NONAME]
+        489      0004F0E4 [NONAME]
+        490      0004F147 [NONAME]
+        491      0000A761 [NONAME]
+        492      00013738 [NONAME]
+        493      0001B4F9 [NONAME]
+        494      0001B92F [NONAME]
+        495      0001B7F1 [NONAME]
+        496      0001836C [NONAME]
+        497      000627F0 [NONAME]
+        498      000628B7 [NONAME]
+        499      0006293B [NONAME]
+        505      00016B59 [NONAME]
+        506      0006297E [NONAME]
+        507      00017504 [NONAME]
+        508      0001708A [NONAME]
+        509      00019469 [NONAME]
+        510      0000B592 [NONAME]
+        511      00012D35 [NONAME]
+        512      0001788F [NONAME]
+        513      00057302 [NONAME]
+        514      0001BA3C [NONAME]
+        516      0000A1A7 [NONAME]
+        517      0001AEF2 [NONAME]
+        518      0005908D [NONAME]
+        519      0000BE13 [NONAME]
+        520      00016B0D [NONAME]
+        521      00018298 [NONAME]
+        522      00062E7F [NONAME]
+        523      000629DF [NONAME]
+        524      00062FC6 [NONAME]
+        525      0001824A [NONAME]
+        526      00062F80 [NONAME]
+        527      0006282E [NONAME]
+        528      00062877 [NONAME]
+        529      0001836C [NONAME]
+        530      000627F0 [NONAME]
+        531      00017F99 [NONAME]
+        532      00062B01 [NONAME]
+        533      00018042 [NONAME]
+        534      000628ED [NONAME]
+        535      00062B43 [NONAME]
+        536      0001B229 [NONAME]
+        537      000590F4 [NONAME]
+        538      00023237 [NONAME]
+        539      000570CD [NONAME]
+        540      000593E9 [NONAME]
+        541      00058445 [NONAME]
+        542      0001A8DE [NONAME]
+        543      0004B88B [NONAME]
+        544      00009FF9 [NONAME]
+        545      00058610 [NONAME]
+        546      000592FF [NONAME]
+        548      000211B0 [NONAME]
+        549      00009435 [NONAME]
+        550      00055F92 [NONAME]
+        551      00007BC4 [NONAME]
+        552      0001303B [NONAME]
+        553      000647F6 [NONAME]
+        554      000645C2 [NONAME]
+        555      00064818 [NONAME]
+        556      000647CE [NONAME]
+        557      0006459D [NONAME]
+        558      0002CC89 [NONAME]
+        559      00053295 [NONAME]
+        560      00013E93 [NONAME]
+        561      000056D9 [NONAME]
+        562      00059178 [NONAME]
+        563      00004E3B [NONAME]
+        564      00022A99 [NONAME]
+        565      0006228F [NONAME]
+
+  Section contains the following imports:
+
+    ADVAPI32.dll
+              77F21000 Import Address Table
+              77F89EB0 Import Name Table
+              FFFFFFFF time date stamp
+              FFFFFFFF Index of first forwarder reference
+
+      77D86C17    1CA RegCloseKey
+      77DBCA31     E8 GetCurrentHwProfileA
+      77D872BC    1AF OpenThreadToken
+      77D87EDD    1DC RegEnumValueW
+      77D8D757    1FC RegSetValueExW
+      77DE60EE    1FD RegSetValueW
+      77DAC76E    1FA RegSetValueA
+      77D86FEF    1EF RegQueryValueExW
+      77D8D86A    1F0 RegQueryValueW
+      77DABB5D    1ED RegQueryValueA
+      77D949AE    1EA RegQueryInfoKeyW
+      77D86A9F    1E5 RegOpenKeyExW
+      77D87936    1E6 RegOpenKeyW
+      77D94280    1D1 RegDeleteKeyA
+      77D94312    1E9 RegQueryInfoKeyA
+      77D8ECD5    1D3 RegDeleteValueA
+      77DA9B8F    1DB RegEnumValueA
+      77D95398    1D7 RegEnumKeyA
+      77D8EAD7    1FB RegSetValueExA
+      77D8E9E4    1CE RegCreateKeyExA
+      77D95196    1D8 RegEnumKeyExA
+      77D87AAB    1EE RegQueryValueExA
+      77D872F5    119 GetTokenInformation
+      77D8797B    1AA OpenProcessToken
+      77D94C13     E4 GetAce
+      77D87CA8     E1 FreeSid
+      77D879DB    231 SetSecurityDescriptorDacl
+      77D879B6    132 InitializeSecurityDescriptor
+      77DA811F     13 AddAccessDeniedAce
+      77D87D21     10 AddAccessAllowedAce
+      77D87CF9    131 InitializeAcl
+      77D87D4C     F6 GetLengthSid
+      77D87CB9     1D AllocateAndInitializeSid
+      77D954A4    123 GetUserNameA
+      77D9494D    124 GetUserNameW
+      77DABCC3    1CD RegCreateKeyA
+      77DABA25    1D0 RegCreateKeyW
+      77D8775C    1CF RegCreateKeyExW
+      77D9557B    1D2 RegDeleteKeyW
+      77D8EDE1    1D4 RegDeleteValueW
+      77D8D5D4    1DA RegEnumKeyW
+      77D87BC9    1D9 RegEnumKeyExW
+      77D8EFB8    1E3 RegOpenKeyA
+      77D87842    1E4 RegOpenKeyExA
+
+    GDI32.dll
+              77F210B4 Import Address Table
+              77F89F64 Import Name Table
+              FFFFFFFF time date stamp
+              FFFFFFFF Index of first forwarder reference
+
+      77EE9F58     C9 EnumFontFamiliesA
+      77EFD035     CC EnumFontFamiliesW
+      77EFFB47     CA EnumFontFamiliesExA
+      77EDBBE9     CB EnumFontFamiliesExW
+      77EEC63D    1B5 GetTextExtentPoint32A
+      77ED7F9D    1B6 GetTextExtentPoint32W
+      77EDF941    1BA GetTextFaceA
+      77EDA5BB    1BC GetTextFaceW
+      77EFD94B    15F GetCharacterPlacementA
+      77EFE934    160 GetCharacterPlacementW
+      77EFBC60     39 CreateFontA
+      77EDAFF9     3E CreateFontW
+      77EFAF05     43 CreateMetaFileA
+      77EE83FB     44 CreateMetaFileW
+      77F05BA9    246 StartDocA
+      77F05695    247 StartDocW
+      77ED6B0D    1B9 GetTextExtentPointW
+      77EDD3EA     DD ExtTextOutA
+      77ED9F95    16B GetDIBits
+      77EDB5DA     45 CreatePalette
+      77EDBA8E    1AA GetSystemPaletteEntries
+      77ED5FE0     2D CreateCompatibleDC
+      77ED6BFA     8F DeleteObject
+      77EDB60A    19B GetPaletteEntries
+      77EDBA7A     3F CreateHalftonePalette
+      77ED61C1    1A6 GetStockObject
+      77ED5A69    16C GetDeviceCaps
+      77ED61EF     27 CreateBitmap
+      77ED700A     2C CreateCompatibleBitmap
+      77ED5B70    20F SelectObject
+      77EDDCEF    1B7 GetTextExtentPointA
+      77EDECBE     3A CreateFontIndirectA
+      77ED938F     3D CreateFontIndirectW
+      77ED8D16    196 GetObjectA
+      77ED83B3    198 GetObjectW
+      77EDDF35    1BD GetTextMetricsA
+      77ED7DB9    1BE GetTextMetricsW
+      77ED5D77    23D SetTextColor
+      77ED5EDB    217 SetBkMode
+      77ED8086     DE ExtTextOutW
+      77ED5E29    216 SetBkColor
+      77EDE1F7    159 GetCharWidthA
+      77EEEFB5    158 GetCharWidth32W
+      77F012B6     2A CreateColorSpaceA
+      77F013C2     2B CreateColorSpaceW
+      77EDB7C2     2E CreateDCA
+      77EDBE28     2F CreateDCW
+      77EDEA79     41 CreateICA
+      77ED6E5F     8C DeleteDC
+      77EDEF25     42 CreateICW
+
+    KERNEL32.dll
+              77F21180 Import Address Table
+              77F8A030 Import Name Table
+              FFFFFFFF time date stamp
+              FFFFFFFF Index of first forwarder reference
+
+      7C82134B    1E8 GetWindowsDirectoryA
+      7C94FE10    316 SetLastError
+      7C9410E0    243 LeaveCriticalSection
+      7C8126D1     E6 FlushFileBuffers
+      7C810E17    38F WriteFile
+      7C810C1E    309 SetFilePointer
+      7C801A28     4F CreateFileA
+      7C941000     96 EnterCriticalSection
+      7C80176F    1BE GetSystemTime
+      7C8097B8    13E GetCurrentThreadId
+      7C80932E    1D4 GetTickCount
+      7C80B86C    22B IsDBCSLeadByte
+      7C812F06     FD GetCPInfo
+      7C830D64    3AB lstrcmpA
+      7C80A4A5    1CF GetThreadLocale
+      7C80D107     37 CompareStringA
+      7C8017E9    1C0 GetSystemTimeAsFileTime
+      7C801E1A    34A TerminateProcess
+      7C863E6A    35B UnhandledExceptionFilter
+      7C8449FD    336 SetUnhandledExceptionFilter
+      7C8329F1     B9 ExpandEnvironmentStringsA
+      7C8115CC    156 GetFileAttributesA
+      7C80AC9F    303 SetErrorMode
+      7C81398C    161 GetFullPathNameA
+      7C8217D2    2CB SearchPathA
+      7C814F7A    1B9 GetSystemDirectoryA
+      7C812812    307 SetFileAttributesA
+      7C838E00    236 LCMapStringA
+      7C80EE67     CC FindClose
+      7C834EC9     D9 FindNextFileA
+      7C813869     D0 FindFirstFileA
+      7C831CA8    30D SetFileTime
+      7C814B82    150 GetEnvironmentVariableA
+      7C80A739     4C CreateEventW
+      7C860131     A3 EnumResourceNamesA
+      7C855A51     A4 EnumResourceNamesW
+      7C80EFCA     DA FindNextFileW
+      7C80BCF9    341 SizeofResource
+      7C80CD27    257 LockResource
+      7C80A045    249 LoadResource
+      7C80BF19     DF FindResourceA
+      7C809E91    227 IsBadReadPtr
+      7C80A66C    229 IsBadStringPtrW
+      7C80FF12    1FF GlobalUnlock
+      7C80FCBF    1F4 GlobalFree
+      7C80FDBD    1ED GlobalAlloc
+      7C80FFA9    1F8 GlobalLock
+      7C821794     47 CreateDirectoryA
+      7C8323EA     4A CreateDirectoryW
+      7C8107F0     52 CreateFileW
+      7C831EC5     81 DeleteFileA
+      7C831F4B     82 DeleteFileW
+      7C80EF71     D3 FindFirstFileW
+      7C85AA76     76 DebugBreak
+      7C82F790     EB FormatMessageA
+      7C834BA7     EC FormatMessageW
+      7C835016    139 GetCurrentDirectoryA
+      7C80B907    13A GetCurrentDirectoryW
+      7C80B7DC    159 GetFileAttributesW
+      7C80D2F2    16B GetLocaleInfoA
+      7C8115F2    16C GetLocaleInfoW
+      7C80B465    175 GetModuleFileNameW
+      7C831DD3    1BA GetSystemDirectoryW
+      7C80E76C    2CC SearchPathW
+      7C80B731    176 GetModuleHandleA
+      7C80E4CD    179 GetModuleHandleW
+      7C8314C5    308 SetFileAttributesW
+      7C82EC3C    186 GetNumberFormatA
+      7C8344D4    187 GetNumberFormatW
+      7C80B8E2    162 GetFullPathNameW
+      7C835BC8    1AC GetShortPathNameA
+      7C81F256    1AD GetShortPathNameW
+      7C8770EF    1B2 GetStringTypeExA
+      7C80C07F    1B3 GetStringTypeExW
+      7C83644C    18E GetPrivateProfileIntA
+      7C82FA36    295 QueryPerformanceFrequency
+      7C82147D    1A9 GetProfileStringA
+      7C8213E0    1AA GetProfileStringW
+      7C861807    1C9 GetTempFileNameA
+      7C8359CF    1CA GetTempFileNameW
+      7C835DE2    1CB GetTempPathA
+      7C830779    1CC GetTempPathW
+      7C80AE0B    1E9 GetWindowsDirectoryW
+      7C80F184    151 GetEnvironmentVariableW
+      7C801D53    245 LoadLibraryExA
+      7C801AF5    246 LoadLibraryExW
+      7C80A3EE     38 CompareStringW
+      7C8286D6     3F CopyFileA
+      7C82F863     42 CopyFileW
+      7C835EA7    260 MoveFileA
+      7C821249    263 MoveFileW
+      7C81329C    26E OpenEventA
+      7C8131D0    26F OpenEventW
+      7C85AC7C    27E OutputDebugStringA
+      7C85B335    27F OutputDebugStringW
+      7C85C121    2B5 RemoveDirectoryA
+      7C836F73    2B6 RemoveDirectoryW
+      7C8360F5    2FA SetCurrentDirectoryA
+      7C80F37E    2FB SetCurrentDirectoryW
+      7C80E9CF     5C CreateMutexA
+      7C80E947     5D CreateMutexW
+      7C8305E6     BA ExpandEnvironmentStringsW
+      7C812EAD     68 CreateSemaphoreA
+      7C810116     69 CreateSemaphoreW
+      7C80AEDB    247 LoadLibraryW
+      7C836345    1D5 GetTimeFormatA
+      7C833FEB    1D6 GetTimeFormatW
+      7C836206    13F GetDateFormatA
+      7C83378D    140 GetDateFormatW
+      7C835D6C    394 WritePrivateProfileStringA
+      7C81EE34    395 WritePrivateProfileStringW
+      7C832B6E    194 GetPrivateProfileStringA
+      7C80F9ED    195 GetPrivateProfileStringW
+      7C85CD2B    396 WritePrivateProfileStructA
+      7C85CE6D    397 WritePrivateProfileStructW
+      7C85CA33    196 GetPrivateProfileStructA
+      7C85CB9D    197 GetPrivateProfileStructW
+      7C80236B     62 CreateProcessA
+      7C802336     66 CreateProcessW
+      7C8360C1    1EB GlobalAddAtomA
+      7C8100FC    1EC GlobalAddAtomW
+      7C8360DB    1F0 GlobalFindAtomA
+      7C834EAF    1F1 GlobalFindAtomW
+      7C80BE91    3B1 lstrcpyA
+      7C80AC6E     F0 FreeLibrary
+      7C80CD38    237 LCMapStringW
+      7C80E87C     C3 FileTimeToSystemTime
+      7C810BAC    347 SystemTimeToFileTime
+      7C80A864    16A GetLocalTime
+      7C80E8F6     C2 FileTimeToLocalFileTime
+      7C8097F6    220 InterlockedIncrement
+      7C80980A    21C InterlockedDecrement
+      7C810B69     36 CompareFileTime
+      7C801812    2A6 ReadFile
+      7C810B07    15B GetFileSize
+      7C809C55    352 TlsSetValue
+      7C8097D0    351 TlsGetValue
+      7C8310E2    1F9 GlobalMemoryStatus
+      7C830BAB    1EF GlobalDeleteAtom
+      7C812CB3    1A3 GetProcessVersion
+      7C8316B7    110 GetComputerNameW
+      7C80997B    13D GetCurrentThread
+      7C80C200     F1 FreeLibraryAndExitThread
+      7C8106C7     6C CreateThread
+      7C80BA61    376 VirtualQuery
+      7C8099A5     F6 GetACP
+      7C809FA0    1D8 GetUserDefaultLCID
+      7C809F09    22A IsBadWritePtr
+      7C80981E    21D InterlockedExchange
+      7C83205E    300 SetEndOfFile
+      7C810CFD    15A GetFileInformationByHandle
+      7C8325D4    253 LocalSize
+      7C8023A0    343 SleepEx
+      7C82C07A    297 QueueUserAPC
+      7C80C0E8     B7 ExitThread
+      7C812B6E    1DE GetVersionExA
+      7C809832    21B InterlockedCompareExchange
+      7C802530    37E WaitForSingleObject
+      7C80C03D    2B4 ReleaseSemaphore
+      7C82CA3F    279 OpenSemaphoreA
+      7C810F88    209 HeapDestroy
+      7C9500A4    205 HeapAlloc
+      7C812C46    207 HeapCreate
+      7C801629     88 DeviceIoControl
+      7C835358    1BC GetSystemPowerStatus
+      7C802446    342 Sleep
+      7C812A99    299 RaiseException
+      7C81EDA5    193 GetPrivateProfileSectionW
+      7C8095BC    37D WaitForMultipleObjectsEx
+      7C831C35    15D GetFileTime
+      7C80AA5C    3AC lstrcmpW
+      7C80A4B7    294 QueryPerformanceCounter
+      7C8101A1    3B4 lstrcpynA
+      7C801D7B    244 LoadLibraryA
+      7C80AE30    198 GetProcAddress
+      7C83089D     4B CreateEventA
+      7C80A0A7    304 SetEvent
+      7C80B55F    174 GetModuleFileNameA
+      7C8094EE     50 CreateFileMappingA
+      7C80B995    25A MapViewOfFile
+      7C80BA04    35E UnmapViewOfFile
+      7C8099B0    13C GetCurrentProcessId
+      7C8309D1    277 OpenProcess
+      7C80DE85    13B GetCurrentProcess
+      7C809BD7     31 CloseHandle
+      7C80DE8E     91 DuplicateHandle
+      7C80BB31    3AE lstrcmpiA
+      7C80BE46    3B7 lstrlenA
+      7C809A99    3B8 lstrlenW
+      7C94FE01    168 GetLastError
+      7C80A164    382 WideCharToMultiByte
+      7C809C88    267 MultiByteToWideChar
+      7C830917    251 LocalReAlloc
+      7C809A1D    24A LocalAlloc
+      7C8099BF    24E LocalFree
+      7C811326     89 DisableThreadLibraryCalls
+      7C809F81    218 InitializeCriticalSection
+      7C812E2F    34F TlsAlloc
+      7C95135A     7F DeleteCriticalSection
+      7C813767    350 TlsFree
+      7C832748    18F GetPrivateProfileIntW
+      7C80BC5E     E2 FindResourceW
+      7C811185    158 GetFileAttributesExW
+
+    msvcrt.dll
+              77F214B0 Import Address Table
+              77F8A360 Import Name Table
+              FFFFFFFF time date stamp
+              FFFFFFFF Index of first forwarder reference
+
+      4CF223D8     B6 _adjust_fdiv
+      4CEEC407    2D8 malloc
+      4CEF9D67    13B _initterm
+      4CEEC21B    2A5 free
+      4CF06320    1FA _strlwr
+      4CEDCE77    274 _wtol
+      4CEF5C94     ED _except_handler3
+      4CF07FCC    32D wcslen
+      4CF072B0    2DF memmove
+      4CEFFFE7    220 _vsnwprintf
+      4CEFFF8A    21F _vsnprintf
+
+    USER32.dll
+              77F214E0 Import Address Table
+              77F8A390 Import Name Table
+              FFFFFFFF time date stamp
+              FFFFFFFF Index of first forwarder reference
+
+      77CFD9BB     4D CreateAcceleratorTableW
+      77D19B28     52 CreateDialogIndirectParamA
+      77D1F01F     54 CreateDialogIndirectParamW
+      77D1C7DB     55 CreateDialogParamA
+      77CFEA3B     56 CreateDialogParamW
+      77D0C17E     8E DefWindowProcA
+      77D08D20     8F DefWindowProcW
+      77D36D7D     9B DialogBoxIndirectParamA
+      77D12072     9D DialogBoxIndirectParamW
+      77D1B144     9E DialogBoxParamA
+      77D047AB     9F DialogBoxParamW
+      77CF96B8     A1 DispatchMessageA
+      77CF8A01     A2 DispatchMessageW
+      77D09AE9     FB GetClassLongW
+      77D0772B    13A GetMessageA
+      77CF91C6    13E GetMessageW
+      77CF945D    16E GetWindowLongA
+      77CF88A6    16F GetWindowLongW
+      77D2F18B    178 GetWindowTextLengthA
+      77D07836    179 GetWindowTextLengthW
+      77D1C689    1A1 IsDialogMessageA
+      77D07424    1A2 IsDialogMessageW
+      77D11553    1B3 LoadAcceleratorsA
+      77D0EE76    1B4 LoadAcceleratorsW
+      77D0473C    1B5 LoadBitmapA
+      77D00242    1B6 LoadBitmapW
+      77D0D33E    1B7 LoadCursorA
+      77CF9D69    1BA LoadCursorW
+      77D0E8F6    1BB LoadIconA
+      77D0E8BC    1BC LoadIconW
+      77D37134     58 CreateIconFromResource
+      77CFD354     59 CreateIconFromResourceEx
+      77CFC4DA    1CF LookupIconIdFromDirectoryEx
+      77D07C08    1BD LoadImageA
+      77D0CED3     91 DeleteMenu
+      77D0D39D     97 DestroyMenu
+      77D0DEB2    299 SystemParametersInfoA
+      77D1C702     BC DrawTextA
+      77D0A042     4A CopyRect
+      77D09011    1F2 OffsetRect
+      77CF8E78    15A GetSysColor
+      77CF8A80    17B GetWindowThreadProcessId
+      77D09313    1AB IsWindow
+      77D4531E    2A4 TrackPopupMenu
+      77D4CF62    2A5 TrackPopupMenuEx
+      77CF9E36    1C9 LoadStringW
+      77D0A340    1FD PeekMessageA
+      77CF929B    1FE PeekMessageW
+      77D0AAFD    1FF PostMessageA
+      77CF8CCB    200 PostMessageW
+      77D077C5    202 PostThreadMessageA
+      77D077B8    203 PostThreadMessageW
+      77D0C29D    280 SetWindowLongA
+      77D0C2BB    281 SetWindowLongW
+      77D11211    28A SetWindowsHookExA
+      77D0820F    28B SetWindowsHookExW
+      77D0FAC4    2A7 TranslateAcceleratorA
+      77CF941E    2A8 TranslateAcceleratorW
+      77CFA9D1    2DB wvsprintfW
+      77CFF72A    135 GetMenuItemInfoW
+      77D2F710    18E InsertMenuItemA
+      77CFF5C8    18F InsertMenuItemW
+      77D3A8F6     79 DdeInitializeA
+      77D006D7     7A DdeInitializeW
+      77D0B24C     29 CharLowerW
+      77CFAEF1     30 CharToOemA
+      77D03467     33 CharToOemW
+      77CF90D2     37 CharUpperW
+      77D0E4A9     60 CreateWindowExA
+      77D0D0A3     61 CreateWindowExW
+      77D0D7E2     BF DrawTextW
+      77D1214A     E4 FindWindowExA
+      77CFE0E3     E5 FindWindowExW
+      77D1EBFF     F6 GetClassInfoA
+      77D0E81E     F9 GetClassInfoW
+      77D09D12     FD GetClassNameW
+      77D11290    102 GetClipboardFormatNameA
+      77D3957F    103 GetClipboardFormatNameW
+      77D307EA    1DC MessageBoxA
+      77D46534    1E3 MessageBoxW
+      77D10042    14A GetPropA
+      77D094B3    14B GetPropW
+      77D0A5CD    17A GetWindowTextW
+      77D07B97    1BE LoadImageW
+      77D0F306     5D CreateMenu
+      77D4CEC2    25E SetMenuContextHelpId
+      77D2FA83    1C3 LoadMenuA
+      77D0EB48    1C6 LoadMenuW
+      77D2F24E    138 GetMenuStringA
+      77D364E4    139 GetMenuStringW
+      77D1ED26    18D InsertMenuA
+      77CFF60E    190 InsertMenuW
+      77D1A082    1DF MessageBoxIndirectA
+      77D464D5    1E0 MessageBoxIndirectW
+      77D2F20B    1E4 ModifyMenuA
+      77CFF51F    1E5 ModifyMenuW
+      77D100D7    1EE OemToCharA
+      77D46E76    1F1 OemToCharW
+      77D0EA5E    216 RegisterClassA
+      77CFA39A    219 RegisterClassW
+      77CF8E28    21A RegisterClipboardFormatA
+      77CFAF34    21B RegisterClipboardFormatW
+      77CF8E28    227 RegisterWindowMessageA
+      77CFAF34    228 RegisterWindowMessageW
+      77D10094    22C RemovePropA
+      77D0C076    22D RemovePropW
+      77D0FB6B    23E SendMessageTimeoutA
+      77D0929A    240 SendMessageW
+      77D10000    26A SetPropA
+      77D0C0B9    26B SetPropW
+      77D0960E    287 SetWindowTextW
+      77CF9F06    29A SystemParametersInfoW
+      77D089A3    2B3 UnregisterClassA
+      77CF9AA4    2B4 UnregisterClassW
+      77D1E4C0    2C7 VkKeyScanA
+      77D1E1F6    2CA VkKeyScanW
+      77D41BD4    2D3 WinHelpW
+      77D1C739     BD DrawTextExA
+      77D0B415     BE DrawTextExW
+      77D4AE5E    262 SetMenuItemInfoA
+      77D03281    263 SetMenuItemInfoW
+      77D07C39    217 RegisterClassExA
+      77CFAF7F    218 RegisterClassExW
+      77CFDD58     F7 GetClassInfoExA
+      77CFDEBC     F8 GetClassInfoExW
+      77D41E43     6E DdeCreateStringHandleA
+      77D00447     6F DdeCreateStringHandleW
+      77D42096     80 DdeQueryStringA
+      77D420B3     81 DdeQueryStringW
+      77D0C9C3     E6 FindWindowW
+      77D073CC    237 SendDlgItemMessageW
+      77D0CDAA    23F SendMessageTimeoutW
+      77D1FE8D     93 DestroyAcceleratorTable
+      77D09ED9    121 GetKeyState
+      77D0C7F9    266 SetParent
+      77D0910F    145 GetParent
+      77CFF716    22B RemoveMenu
+      77D0D896    159 GetSubMenu
+      77D0B0F0     CB EnumChildWindows
+      77D09F72    1AE IsWindowUnicode
+      77D0D2C4     C2 EnableMenuItem
+      77D11ABD     39 CheckMenuItem
+      77D0AFDB     90 DeferWindowPos
+      77D09507    1D7 MapWindowPoints
+      77D1C2E7    236 SendDlgItemMessageA
+      77D099F3    283 SetWindowPos
+      77D090B4    174 GetWindowRect
+      77D0AF8D     C5 EndDeferWindowPos
+      77D0AFB9      C BeginDeferWindowPos
+      77D09849     C4 EnableWindow
+      77D0AF56    292 ShowWindow
+      77D0B112    256 SetFocus
+      77D04DFA    1A3 IsDlgButtonChecked
+      77D04A4E     C6 EndDialog
+      77CF9689    1EA MsgWaitForMultipleObjects
+      77CF970E    19E IsChild
+      77CFF667    130 GetMenuDefaultItem
+      77CFF601     5E CreatePopupMenu
+      77D09930    24D SetCursor
+      77D082E1     E3 FindWindowA
+      77D0A5AE     DE EnumWindows
+      77CF8BF6    2AA TranslateMessage
+      77D0AEAB    2BB UpdateWindow
+      77D08FD5    193 InvalidateRect
+      77D08FFD     C8 EndPaint
+      77D08FE9      D BeginPaint
+      77D0F94F     B3 DrawFocusRect
+      77D098C8    116 GetFocus
+      77D0FBBD    2C5 ValidateRect
+      77D09E81     DF EqualRect
+      77D0A8C9    164 GetUpdateRect
+      77D0D1D2    10E GetDesktopWindow
+      77D4AEBE     10 BroadcastSystemMessage
+      77D0B1B0     2C CharNextW
+      77D33497     4C CreateAcceleratorTableA
+      77D2FC5E     47 CopyAcceleratorTableW
+      77D36C91     46 CopyAcceleratorTableA
+      77CF9216     36 CharUpperBuffW
+      77CF9E57     28 CharLowerBuffW
+      77D0750E     19 CallMsgFilterW
+      77D4B216     18 CallMsgFilterA
+      77D0A01E     1C CallWindowProcW
+      77D0A97D     1B CallWindowProcA
+      77D0436E    111 GetDlgItem
+      77D0908E     FF GetClientRect
+      77D0F3C2    23B SendMessageA
+      77D0F56B    286 SetWindowTextA
+      77CF8D2B     34 CharUpperA
+      77D0C8DA     2D CharPrevA
+      77CF86C7    10C GetDC
+      77D0D427    11A GetIconInfo
+      77D0CB84     B7 DrawIconEx
+      77CFC86C     5A CreateIconIndirect
+      77CF869D    22A ReleaseDC
+      77D0D312     96 DestroyIcon
+      77D0C8B0     2A CharNextA
+      77D0F4F1     FA GetClassLongA
+      77CF8C2E    27A SetTimer
+      77CF8C42    1B2 KillTimer
+      77D1216B    177 GetWindowTextA
+      77D0F45F     FC GetClassNameA
+      77CF8F9C    15D GetSystemMetrics
+      77D0EF1C    132 GetMenuItemCount
+      77D0F0AD    134 GetMenuItemInfoA
+      77D1EE5D    2D2 WinHelpA
+      77D0C908    1C8 LoadStringA
+
+  Header contains the following bound import information:
+    Bound to ADVAPI32.dll [4802C046] Mon Apr 14 11:24:06 2008
+    Bound to GDI32.dll [4802C042] Mon Apr 14 11:24:02 2008
+    Bound to KERNEL32.dll [4802C09B] Mon Apr 14 11:25:31 2008
+      Contained forwarders bound to NTDLL.DLL [4802C09A] Mon Apr 14 11:25:30 2008
+    Bound to msvcrt.dll [4802C029] Mon Apr 14 11:23:37 2008
+    Bound to USER32.dll [4802C091] Mon Apr 14 11:25:21 2008
+
+  Section contains the following delay load imports:
+
+    ole32.dll
+              00000001 Characteristics
+              77F8D78C Address of HMODULE
+              77F8D0D0 Import Address Table
+              77F89570 Import Name Table
+              00000000 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          77F889EE               0 CoWaitForMultipleHandles
+          77F40664               0 CreateBindCtx
+          77F88A22               0 CoGetTreatAsClass
+          77F88A08               0 StringFromGUID2
+          77F37CB1               0 CoInitializeEx
+          77F317D0               0 CoTaskMemFree
+          77F31818               0 CoCreateInstance
+          77F37297               0 CoUninitialize
+          77F35281               0 CoGetClassObject
+          77F889D4               0 CLSIDFromProgID
+          77F317C4               0 CoTaskMemAlloc
+
+    appHelp.dll
+              00000001 Characteristics
+              77F8D7A0 Address of HMODULE
+              77F8D000 Import Address Table
+              77F894A0 Import Name Table
+              00000000 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          77F31824               0 ApphelpCheckShellObject
+
+    MLANG.dll
+              00000001 Characteristics
+              77F8DA4C Address of HMODULE
+              77F8D098 Import Address Table
+              77F89538 Import Name Table
+              00000000 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          77F4CAB8                 Ordinal   120
+          77F88A3C                 Ordinal   113
+          77F88A56                 Ordinal   112
+
+    COMCTL32.dll
+              00000001 Characteristics
+              77F8D970 Address of HMODULE
+              77F8D008 Import Address Table
+              77F894A8 Import Name Table
+              00000000 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          77F88B26                 Ordinal   236
+          77F88BC2                 Ordinal   339
+          77F88BA8                 Ordinal   332
+          77F88B8E                 Ordinal   323
+          77F88B74                 Ordinal   320
+          77F88B5A                 Ordinal   324
+          77F88B40                 Ordinal   388
+          77F43698                 Ordinal   336
+          77F4010F                 Ordinal   334
+          77F88B0C                 Ordinal   337
+          77F88AF2                 Ordinal   329
+          77F40100                 Ordinal   328
+          77F88AD8                 Ordinal   234
+          77F88ABE               0 PropertySheetA
+          77F88AA4                 Ordinal   410
+          77F88A8A                 Ordinal   412
+          77F88A70                 Ordinal   413
+
+    CRYPT32.dll
+              00000001 Characteristics
+              77F8DFDC Address of HMODULE
+              77F8D074 Import Address Table
+              77F89514 Import Name Table
+              00000000 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          77F88C41               0 CertGetNameStringW
+          77F88BDC               0 CertGetCertificateContextProperty
+          77F88BF9               0 CertControlStore
+          77F88C05               0 CertOpenStore
+          77F88C11               0 CertCloseStore
+          77F88C1D               0 CertFreeCertificateContext
+          77F88C29               0 CertFindCertificateInStore
+          77F88C35               0 CryptDecodeObject
+
+    WINTRUST.dll
+              00000001 Characteristics
+              77F8DFE0 Address of HMODULE
+              77F8D220 Import Address Table
+              77F896C0 Import Name Table
+              00000000 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          77F88D1F               0 CryptCATAdminAcquireContext
+          77F88D05               0 CryptCATAdminReleaseContext
+          77F88CEB               0 CryptCATAdminEnumCatalogFromHash
+          77F88CD1               0 CryptCATCatalogInfoFromContext
+          77F88CBA               0 CryptCATAdminReleaseCatalogContext
+          77F88CA3               0 CryptCATAdminCalcHashFromFileHandle
+          77F88C8C               0 WTHelperProvDataFromStateData
+          77F88C75               0 WTHelperGetProvSignerFromChain
+          77F88C4D               0 WinVerifyTrust
+
+    MPR.dll
+              00000001 Characteristics
+              77F8DFE4 Address of HMODULE
+              77F8D0A8 Import Address Table
+              77F89548 Import Name Table
+              00000000 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          77F88DBD               0 WNetGetResourceInformationW
+          77F88D78               0 WNetRestoreConnectionW
+          77F88D61               0 WNetRestoreConnectionA
+          77F88DD7               0 WNetGetConnectionW
+          77F88D8F               0 WNetGetLastErrorA
+          77F88DA6               0 WNetGetLastErrorW
+          77F88D39               0 WNetGetResourceInformationA
+
+    OLEAUT32.dll
+              00000001 Characteristics
+              77F8D79C Address of HMODULE
+              77F8D100 Import Address Table
+              77F895A0 Import Name Table
+              00000000 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          77F31C14                 Ordinal     8
+          77F31BE4                 Ordinal    12
+          77F31C08                 Ordinal   150
+          77F88DF1                 Ordinal    10
+          77F31BFC                 Ordinal     6
+          77F88E0B                 Ordinal    24
+          77F31BD8                 Ordinal     9
+          77F31BF0                 Ordinal     2
+          77F88E1A                 Ordinal    23
+          77F88E29                 Ordinal    19
+          77F88E47                 Ordinal    17
+          77F88E38                 Ordinal    20
+
+    msi.dll
+              00000001 Characteristics
+              77F8DFE8 Address of HMODULE
+              77F8D0C8 Import Address Table
+              77F89568 Import Name Table
+              00000000 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          77F88E56                 Ordinal    70
+
+    SETUPAPI.dll
+              00000001 Characteristics
+              77F8DFEC Address of HMODULE
+              77F8D134 Import Address Table
+              77F895D4 Import Name Table
+              00000000 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          77F88EA6               0 SetupDiEnumDeviceInterfaces
+          77F88E7E               0 SetupDiDestroyDeviceInfoList
+          77F88EBD               0 SetupDiGetClassDevsA
+
+    USERENV.dll
+              00000001 Characteristics
+              77F8D878 Address of HMODULE
+              77F8D1F0 Import Address Table
+              77F89690 Import Name Table
+              00000000 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          77F30382               0 ExpandEnvironmentStringsForUserW
+
+    urlmon.dll
+              00000001 Characteristics
+              77F8DA54 Address of HMODULE
+              77F8D1E8 Import Address Table
+              77F89688 Import Name Table
+              00000000 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          77F4CCC4               0 CoInternetIsFeatureEnabled
+
+    SHELL32.dll
+              00000001 Characteristics
+              77F8D788 Address of HMODULE
+              77F8D144 Import Address Table
+              77F895E4 Import Name Table
+              00000000 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          77F31E79               0 SHBindToParent
+          77F36515               0 SHGetDataFromIDListW
+          77F31E4C                 Ordinal    21
+          77F31E6A                 Ordinal    18
+          77F3C993                 Ordinal   155
+          77F890B9               0 SHGetInstanceExplorer
+          77F890AA                 Ordinal   176
+          77F31E5B                 Ordinal   524
+          77F89014                 Ordinal     6
+          77F89005                 Ordinal     3
+          77F88FF6               0 DragQueryFileW
+          77F40673               0 SHGetDesktopFolder
+          77F8908C               0 SHFormatDrive
+          77F8907D                 Ordinal   152
+          77F8906E                 Ordinal   195
+          77F33284               0 SHGetFolderPathW
+          77F317B5                 Ordinal   102
+          77F8905F                 Ordinal   526
+          77F41666               0 SHChangeNotify
+          77F89050               0 ExtractIconW
+          77F88FE7               0 DragQueryFileA
+          77F88FD8               0 SHGetFileInfoW
+          77F89023                 Ordinal   179
+          77F89032                 Ordinal   180
+          77F88F6F               0 SHGetPathFromIDListA
+          77F8909B                 Ordinal    64
+          77F88FC9               0 SHGetFileInfoA
+          77F31BB8                 Ordinal   100
+          77F88FBA               0 ExtractIconExW
+          77F88FAB               0 ExtractIconExA
+          77F31BA9                 Ordinal    66
+          77F88F42                 Ordinal    72
+          77F88F51               0 SHBrowseForFolderA
+          77F88F60               0 SHBrowseForFolderW
+          77F88F9C               0 SHFileOperationW
+          77F43619               0 SHGetPathFromIDListW
+          77F88F7E               0 ShellExecuteExA
+          77F37DA1               0 ShellExecuteExW
+          77F88F8D               0 SHFileOperationA
+          77F89041               0 ExtractIconA
+
+    WINMM.dll
+              00000001 Characteristics
+              77F8DA50 Address of HMODULE
+              77F8D214 Import Address Table
+              77F896B4 Import Name Table
+              00000000 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          77F4CAD5               0 PlaySoundW
+          77F890C8               0 PlaySoundA
+
+    VERSION.dll
+              00000001 Characteristics
+              77F8D798 Address of HMODULE
+              77F8D1F8 Import Address Table
+              77F89698 Import Name Table
+              00000000 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          77F402EF               0 VerQueryValueA
+          77F402FE               0 GetFileVersionInfoA
+          77F40318               0 GetFileVersionInfoSizeA
+          77F3094C               0 VerQueryValueW
+          77F30940               0 GetFileVersionInfoW
+          77F30934               0 GetFileVersionInfoSizeW
+
+    comdlg32.dll
+              00000001 Characteristics
+              77F8DFF0 Address of HMODULE
+              77F8D050 Import Address Table
+              77F894F0 Import Name Table
+              00000000 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          77F890D7               0 PrintDlgA
+          77F890F4               0 PrintDlgW
+          77F8913C               0 GetOpenFileNameW
+          77F89100               0 PageSetupDlgA
+          77F8910C               0 PageSetupDlgW
+          77F89118               0 GetSaveFileNameA
+          77F89124               0 GetSaveFileNameW
+          77F89130               0 GetOpenFileNameA
+
+  Summary
+
+        1000 .data
+        6000 .reloc
+        2000 .rsrc
+       6C000 .text

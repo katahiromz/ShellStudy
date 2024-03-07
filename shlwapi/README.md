@@ -42,9 +42,12 @@ See:
 
 - [$(REACTOS)/dll/win32/shlwapi](https://github.com/reactos/reactos/tree/master/dll/win32/shlwapi)
 
-## Where is the function list of `shlwapi.dll`?
+## `dumpbin /imports /exports`
 
-See:
+- [winxp-shlwapi.dll.dumpbin.txt](winxp-shlwapi.dll.dumpbin.txt)
+- [win2k3-shlwapi.dll.dumpbin.txt](win2k3-shlwapi.dll.dumpbin.txt)
+
+See also:
 
 - [$(REACTOS)/dll/win32/shlwapi/shlwapi.spec](https://github.com/reactos/reactos/tree/master/dll/win32/shlwapi/shlwapi.spec)
 

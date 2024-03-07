@@ -172,7 +172,7 @@ Instead of containing the actual data of the target item, a shortcut file
 stores information about the location and properties of the target, allowing
 users to access it quickly and conveniently.
 
-Here are some key points about shortcut (`.`LNK) files:
+Here are some key points about shortcut (`.LNK`) files:
 
 1. **Icon**: Shortcut files typically have a distinct icon overlay to
    differentiate them from regular files or folders. This icon often

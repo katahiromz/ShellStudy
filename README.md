@@ -363,7 +363,7 @@ In general, `HRESULT` values can be divided into two categories:
    that the function call failed. Error codes typically have negative
    values, but they can vary depending on the facility code and error code.
 
-## Please tell me the typical HRESULT values such as `S_OK` and `E_FAIL`
+## Please tell me the typical HRESULT values
 
 Here are some of the typical `HRESULT` values used in Windows programming:
 

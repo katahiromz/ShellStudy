@@ -1,30 +1,11 @@
 # ShellStudy tools
 
-(Under construction)
-
-## IDA Free by Hex-Rays
-
-- [IDA Free](https://hex-rays.com/ida-free/)
-
-## Ghidra by NSA
-
-- [Ghidra](https://ghidra-sre.org/)
-
-## Hex Editor
-
-- [HxD](https://mh-nexus.de/en/hxd/)
-
-## Resource Hacker by Angus Johnson
-
-- [Resource Hacker](https://www.angusj.com/resourcehacker/)
-
-## RisohEditor by katahiromz
-
-- [RisohEditor](https://github.com/katahiromz/RisohEditor)
-
-## refguid by katahiromz
-
-- [refguid](https://github.com/katahiromz/refguid)
+- [IDA Free](https://hex-rays.com/ida-free/) by Hex-Rays
+- [Ghidra](https://ghidra-sre.org/) by NSA
+- [HxD](https://mh-nexus.de/en/hxd/) - Hex Editor
+- [Resource Hacker](https://www.angusj.com/resourcehacker/) by Angus Johnson - Resource Editor
+- [RisohEditor](https://github.com/katahiromz/RisohEditor) by katahiromz - Resource Editor
+- [refguid](https://github.com/katahiromz/refguid) by katahiromz - GUID tool
 
 ---
 

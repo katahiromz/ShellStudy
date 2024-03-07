@@ -439,12 +439,12 @@ Some of the most commonly used macros include:
    successful operation. It returns `TRUE` if the value's high-order bit (bit 31)
    is 0, indicating success.
 
-    ```cpp
+    ```cxx
     #define SUCCEEDED(hr) (((HRESULT)(hr)) >= 0)
     ```
 
     Example usage:
-    ```cpp
+    ```cxx
     HRESULT hr = SomeFunction();
     if (SUCCEEDED(hr))
     {
@@ -460,12 +460,12 @@ Some of the most commonly used macros include:
    failed operation. It returns true if the value's high-order bit (bit 31) is 1,
    indicating failure.
 
-    ```cpp
+    ```cxx
     #define FAILED(hr) (((HRESULT)(hr)) < 0)
     ```
 
     Example usage:
-    ```cpp
+    ```cxx
     HRESULT hr = SomeFunction();
     if (FAILED(hr))
     {
@@ -481,12 +481,12 @@ Some of the most commonly used macros include:
    as an integer) into an HRESULT value. It combines the Win32 error code with
    the `FACILITY_WIN32` facility code.
 
-    ```cpp
+    ```cxx
     #define HRESULT_FROM_WIN32(x) (x & 0x0000FFFF) | (FACILITY_WIN32 << 16) | 0x80000000
     ```
 
     Example usage:
-    ```cpp
+    ```cxx
     DWORD dwError = GetLastError();
     HRESULT hr = HRESULT_FROM_WIN32(dwError);
     ```
@@ -494,12 +494,12 @@ Some of the most commonly used macros include:
 4. **`HRESULT_CODE`**: This macro extracts the error code portion (bits 15-0)
    from an `HRESULT` value.
 
-    ```cpp
+    ```cxx
     #define HRESULT_CODE(hr) ((hr) & 0xFFFF)
     ```
 
     Example usage:
-    ```cpp
+    ```cxx
     HRESULT hr = SomeFunction();
     DWORD dwErrorCode = HRESULT_CODE(hr);
     ```
@@ -509,7 +509,243 @@ and make code more readable and maintainable. They help developers check the
 result of function calls, handle errors, and extract error information from
 `HRESULT` values.
 
-(Under construction)
+## How to register a COM component in programming?
+
+To register a COM component programmatically, you typically use the
+`DllRegisterServer` function of a DLL file, which is a standard entry point
+for registering COM objects. Here's a general outline of the steps involved
+in registering a COM component programmatically:
+
+1. **Implement DllRegisterServer**: Implement the `DllRegisterServer` function
+   in your COM component's code. This function is responsible for adding the
+   necessary registry entries to register the component with the operating system.
+
+    ```cxx
+    STDAPI DllRegisterServer(void)
+    {
+        // Add registry entries to register COM component
+        // Return S_OK if registration is successful
+        // Return an appropriate HRESULT value if registration fails
+    }
+    ```
+
+2. **Add Registry Entries**: Within the `DllRegisterServer` function, add
+   the necessary registry entries to register the COM component. These entries
+   typically include information about the class identifier (CLSID),
+   programmatic identifier (ProgID), interfaces, and other properties of the
+   component.
+
+    Example registry entry for a COM class:
+
+    ```
+    HKEY_CLASSES_ROOT\CLSID\{YourCLSID}:
+        (Default) = "Your COM Class Name"
+    HKEY_CLASSES_ROOT\CLSID\{YourCLSID}\InprocServer32:
+        (Default) = "Path to Your DLL"
+        ThreadingModel = "Apartment" (or other threading model)
+    ```
+
+3. **Call RegCreateKeyEx and RegSetValueEx**: Use the Windows API functions
+   `RegCreateKeyEx` and `RegSetValueEx` to create registry keys and
+   set registry values within the `DllRegisterServer` function.
+
+    Example:
+
+    ```cxx
+    HKEY hKey;
+    DWORD dwDisposition;
+    LSTATUS result = RegCreateKeyEx(HKEY_CLASSES_ROOT, L"CLSID\\{YourCLSID}", 0, NULL, 0, KEY_WRITE, NULL, &hKey, &dwDisposition);
+    if (result == ERROR_SUCCESS)
+    {
+        result = RegSetValueEx(hKey, NULL, 0, REG_SZ, (BYTE*)"Your COM Class Name", sizeof("Your COM Class Name"));
+        // Check result and continue with other registry entries
+        RegCloseKey(hKey);
+    }
+    ```
+
+4. **Return Appropriate HRESULT**: Return `S_OK` from the `DllRegisterServer`
+   function if the registration is successful. If registration fails,
+   return an appropriate HRESULT value indicating the reason for the failure.
+
+5. **Call DllRegisterServer**: Finally, call the `DllRegisterServer` function
+   of your COM component from a command prompt or a script to register the
+   component with the operating system.
+
+Keep in mind that registering a COM component programmatically requires
+administrative privileges, as it involves modifying the system registry.
+Additionally, unregistering the component can be done similarly by
+implementing the `DllUnregisterServer` function and calling it to remove
+the registry entries.
+
+## What is `regsvr32.exe`?
+
+`regsvr32.exe` is a command-line utility in Microsoft Windows used for
+registering and unregistering DLL (Dynamic Link Library) files as COM
+(Component Object Model) components in the Windows Registry. COM components
+are software entities that expose functionality to other components or
+applications through a standardized interface.
+
+Here's a brief overview of how `regsvr32.exe` works:
+
+1. **Registering DLLs**: When you run `regsvr32.exe` with the path to a
+   DLL file as an argument, it calls the `DllRegisterServer` function
+   exported by the DLL. This function typically performs tasks such as
+   adding information about the COM components to the Windows Registry,
+   including class identifiers (CLSIDs), programmatic identifiers (ProgIDs),
+   and other registration information.
+
+   Example: 
+   ```
+   regsvr32.exe MyComponent.dll
+   ```
+
+2. **Unregistering DLLs**: Conversely, running `regsvr32.exe` with the
+   `/u` option unregisters a DLL by calling the `DllUnregisterServer`
+   function exported by the DLL. This function removes the registration
+   information from the Windows Registry.
+
+   Example:
+   ```
+   regsvr32.exe /u MyComponent.dll
+   ```
+
+`regsvr32.exe` is commonly used during the installation and registration
+of COM components, such as ActiveX controls, custom DLLs, and other system
+extensions. It is an essential tool for developers and system administrators
+working with COM-based applications and components in the Windows environment.
+
+## How to register a COM component in ATL programming?
+
+In ATL (Active Template Library) programming, you can register a COM
+component using the `CComModule::RegisterServer` method. This method is
+typically called during the initialization of your ATL-based COM server
+to register the component's CLSID (Class Identifier), ProgID (Programmatic
+Identifier), and other registration information in the Windows Registry.
+
+Here's how you can register a COM component in ATL programming:
+
+1. Implement the `DllRegisterServer` function in your COM server project.
+   This function should call the `RegisterServer` method of the global
+   `CComModule` object to register the component in the Windows Registry.
+
+   ```cxx
+   CComModule gModule;
+
+   HRESULT DllRegisterServer()
+   {
+       // Register the COM server
+       return gModule.RegisterServer(TRUE);
+   }
+   ```
+
+2. In your COM server's `DllMain` function, initialize the `gModule` object.
+
+   ```cxx
+   BOOL WINAPI DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
+   {
+       if (dwReason == DLL_PROCESS_ATTACH)
+       {
+           // Initialize ATL module
+           gModule.Init(ObjectMap, hInstance, NULL);
+       }
+       else if (dwReason == DLL_PROCESS_DETACH)
+       {
+           // Terminate ATL module
+           gModule.Term();
+       }
+       return TRUE;
+   }
+   ```
+
+3. Add `ObjectMap`.
+
+   ```cxx
+   BEGIN_OBJECT_MAP(ObjectMap)
+       OBJECT_ENTRY(CLSID_..., YourClass1)
+       OBJECT_ENTRY(CLSID_..., YourClass2)
+       ...
+   END_OBJECT_MAP()
+   ```
+
+5. Register the COM component by running `regsvr32.exe` with the path to the
+   DLL file as an argument.
+
+   ```
+   regsvr32.exe YourComponent.dll
+   ```
+
+6. Verify that the component is registered correctly by checking the Windows
+   Registry for the registered CLSID and ProgID entries.
+
+## What is `DllCanUnloadNow`?
+
+The `DllCanUnloadNow` function is called by the COM runtime to determine
+whether it is safe to unload the DLL. The function returns an `HRESULT` value
+indicating whether the DLL can be unloaded:
+
+- If the function returns `S_OK`, it indicates that there are no active
+  references to any objects in the DLL, and it is safe to unload.
+- If the function returns `S_FALSE`, it indicates that there are still
+  active references to objects in the DLL, and it is not safe to unload.
+
+The typical implementation of `DllCanUnloadNow` is:
+
+```c
+STDAPI DllCanUnloadNow()
+{
+    return (g_dwRefCount == 0) ? S_OK : S_FALSE;
+}
+```
+
+Or:
+
+```c
+STDAPI DllCanUnloadNow()
+{
+    return gModule.DllCanUnloadNow();
+}
+```
+
+## What is `DllGetClassObject`?
+
+`DllGetClassObject` is a function typically implemented in a DLL file that contains
+COM (Component Object Model) components. It is used to create instances of COM objects
+implemented by the DLL.
+
+The typical implementation of `DllGetClassObject` is:
+
+```c
+STDAPI DllGetClassObject(REFCLSID rclsid, REFIID riid, LPVOID *ppv)
+{
+    HRESULT hr = E_FAIL;
+
+    if (IsEqualCLSID(rclsid, CLSID_MyComponent))
+    {
+        CMyComponentFactory *pFactory = new CMyComponentFactory();
+        if (pFactory)
+        {
+            // Query for the requested interface
+            hr = pFactory->QueryInterface(riid, ppv);
+            pFactory->Release();
+        }
+        else
+        {
+            hr = E_OUTOFMEMORY;
+        }
+    }
+
+    return hr;
+}
+```
+
+Or:
+
+```cxx
+STDAPI DllGetClassObject(REFCLSID rclsid, REFIID riid, LPVOID *ppv)
+{
+    return gModule.DllGetClassObject(rclsid, riid, ppv);
+}
+```
 
 ## References
 

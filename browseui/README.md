@@ -19,6 +19,11 @@ See also:
 
 - [$(REACTOS)/dll/win32/browseui/browseui.spec](https://github.com/reactos/reactos/tree/master/dll/win32/browseui/browseui.spec)
 
+## Resource data
+
+- [winxp-browseui.dll-resource](winxp-browseui.dll-resource)
+- [win2k3-browseui.dll-resource](win2k3-browseui.dll-resource)
+
 ---
 
 [Back](../README.md)

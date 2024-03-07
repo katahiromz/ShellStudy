@@ -1,0 +1,52 @@
+<linkelement resid=AppletLink layout=borderlayout()>
+<element id=atom(icon) layoutpos=left/>
+<element layoutpos=client layout=flowlayout(0,2,0,0)>
+<element id=atom(title) layoutpos=client/>
+</element>
+</linkelement>
+<linkelement resid=TaskLink layout=borderlayout()>
+<element id=atom(icon) layoutpos=left/>
+<element id=atom(title) layoutpos=client/>
+</linkelement>
+<linkelement resid=CategoryLink layout=borderlayout()>
+<element id=atom(icon) layoutpos=left/>
+<element layoutpos=client layout=flowlayout(0,2,0,0)>
+<element id=atom(title) layoutpos=top/>
+</element>
+</linkelement>
+<element resid=CategoryList id=atom(view) sheet=styleref(CategoryListSS) layout=borderlayout()>
+<element id=atom(separator) layoutpos=left width=1/>
+<scrollviewer sheet=styleref(ScrollerSS) layoutpos=client xscrollable=false>
+<element id=atom(watermark) layout=filllayout()>
+<element id=atom(container) sheet=styleref(CategoryListSS) layout=verticalflowlayout(0,0,0)>
+<element id=atom(directive) sheet=styleref(DirectiveSS)/>
+<element id=atom(categorylist) layout=gridlayout(5,2)/>
+</element>
+</element>
+</scrollviewer>
+</element>
+<element resid=CategoryView id=atom(view) sheet=styleref(CategoryViewSS) layout=borderlayout()>
+<element id=atom(separator) layoutpos=left width=1/>
+<element id=atom(banner) layoutpos=top layout=filllayout() sheet=styleref(BannerSS)>
+<element layout=borderlayout()>
+<element id=atom(header) layoutpos=top layout=borderlayout() height=35rp>
+<element id=atom(title) layoutpos=client/>
+</element>
+</element>
+<element id=atom(iconsite) layout=borderlayout()>
+<element id=atom(icon) layoutpos=left/>
+</element>
+</element>
+<scrollviewer sheet=styleref(ScrollerSS) layoutpos=client xscrollable=false>
+<element id=atom(watermark) layout=filllayout()>
+<element id=atom(container) sheet=styleref(CategoryViewSS) layout=verticalflowlayout(0,0,0)>
+<element id=atom(barricadetitle) sheet=styleref(BarricadeSS)/>
+<element id=atom(barricademsg) sheet=styleref(BarricadeSS)/>
+<element id=atom(directive) sheet=styleref(DirectiveSS)/>
+<element id=atom(categorytasklist) layoutpos=top layout=verticalflowlayout(0,0,0)/>
+<element id=atom(directive2) layoutpos=top sheet=styleref(DirectiveSS)/>
+<element id=atom(appletlist) layoutpos=top layout=gridlayout(-1,2)/>
+</element>
+</element>
+</scrollviewer>
+</element>

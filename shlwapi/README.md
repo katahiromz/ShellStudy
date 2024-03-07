@@ -51,6 +51,11 @@ See also:
 
 - [$(REACTOS)/dll/win32/shlwapi/shlwapi.spec](https://github.com/reactos/reactos/tree/master/dll/win32/shlwapi/shlwapi.spec)
 
+## Resource data
+
+- [winxp-shlwapi.dll-resource](winxp-shlwapi.dll-resource)
+- [win2k3-shlwapi.dll-resource](win2k3-shlwapi.dll-resource)
+
 ---
 
 [Back](../README.md)

@@ -18,6 +18,11 @@ See:
 - [winxp-explorer.exe.dumpbin.txt](winxp-explorer.exe.dumpbin.txt)
 - [win2k3-explorer.exe.dumpbin.txt](win2k3-explorer.exe.dumpbin.txt)
 
+## Resource data
+
+- [winxp-explorer.exe-resource](winxp-explorer.exe-resource)
+- [win2k3-explorer.exe-resource](win2k3-explorer.exe-resource)
+
 ---
 
 [Back](../README.md)

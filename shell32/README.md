@@ -49,6 +49,11 @@ See also:
 
 - [$(REACTOS)/dll/win32/shell32/shell32.spec](https://github.com/reactos/reactos/tree/master/dll/win32/shell32/shell32.spec)
 
+## Resource data
+
+- [winxp-shell32.dll-resource](winxp-shell32.dll-resource)
+- [win2k3-shell32.dll-resource](win2k3-shell32.dll-resource)
+
 ---
 
 [Back](../README.md)

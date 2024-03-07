@@ -5,6 +5,7 @@ This is a study about the Windows shell by Katayama Hirofumi MZ.
 - [shell32](shell32/README.md)
 - [explorer](explorer/README.md)
 - [browseui](browseui/README.md)
+- [shlwapi](browseui/README.md)
 - [interface](interface/README.md)
 - [tools](tools/README.md)
 
@@ -42,57 +43,6 @@ See:
 - [$(REACTOS)/dll/win32/browseui](https://github.com/reactos/reactos/tree/master/dll/win32/browseui)
 - [$(REACTOS)/dll/win32/shell32](https://github.com/reactos/reactos/tree/master/dll/win32/shell32)
 - [$(REACTOS)/dll/win32/shlwapi](https://github.com/reactos/reactos/tree/master/dll/win32/shlwapi)
-
-## What is "Explorer"?
-
-In the context of Microsoft Windows operating systems, "Explorer" typically refers
-to the File Explorer application. File Explorer is the file management application
-that allows users to navigate and manage files and folders on their computer. It
-provides a graphical user interface (GUI) for interacting with the file system,
-including features such as browsing directories, copying, moving, renaming,
-deleting files, and creating new folders.
-
-## What is `shell32.dll`?
-
-`shell32.dll` is a Dynamic Link Library (DLL) file in Microsoft Windows operating
-systems. It plays a crucial role in providing various functions and resources
-related to the Windows shell, which is the user interface of the operating system.
-
-Here are some of the key functions and features provided by `shell32.dll`:
-
-1. **User interface elements**: `shell32.dll` contains resources and functions used
-   to create various user interface elements, such as icons, dialog boxes, menus,
-   and controls, which are integral parts of the Windows shell.
-
-2. **File management**: It provides functions for file and folder manipulation,
-   including copying, moving, deleting, renaming, and accessing properties of
-   files and folders. These functions are used by applications and the operating
-   system itself to manage files and folders.
-
-3. **Shell extensions**: `shell32.dll` includes functions and interfaces that allow
-   developers to create shell extensions, which are components that extend the
-   functionality of the Windows shell. Shell extensions can add custom features,
-   context menu options, icon overlays, and other enhancements to the user
-   interface.
-
-4. **Shell namespace**: `shell32.dll` implements the shell namespace, which is a
-   hierarchical structure used to organize and represent various system and
-   user-defined objects, such as files, folders, drives, printers, and network
-   resources. This namespace is used by File Explorer and other shell-related
-   components to navigate and manipulate objects in the file system and beyond.
-
-5. **Shortcut (`.lnk`) handling**: It provides functions for creating, resolving,
-   and manipulating shortcut files (`.lnk` files), which are used to represent
-   links to files, folders, applications, and other resources.
-
-Overall, `shell32.dll` is a core system file that is essential for the proper
-functioning of the Windows shell and many of its associated features and components.
-
-## What is `browseui.dll`?
-
-`browseui.dll` is a component of Windows. It stands for "Browse User Interface" and
-is primarily associated with the graphical user interface (GUI) elements related to
-browsing files and folders.
 
 ## What is "shell extension" in Windows?
 
@@ -206,44 +156,6 @@ Here are some key points about shortcut (`.LNK`) files:
    files, folders, applications, documents, web pages, network resources, and
    more. This versatility allows users to create shortcuts to a wide range of
    items and resources on their system.
-
-## What is `shlwapi.dll`?
-
-`shlwapi.dll` is a Dynamic Link Library (DLL) file in Microsoft Windows
-operating systems. The name stands for `"Shell Light-Weight utility library"`
-API. It contains a collection of utility functions and APIs (Application
-Programming Interfaces) that provide various functionalities related to the
-Windows shell and other system components.
-
-Here are some key functions and features provided by `shlwapi.dll`:
-
-1. **String Manipulation**: `shlwapi.dll` includes functions for working with
-   strings, such as text manipulation, comparison, and formatting. These
-   string-handling functions are often used by applications and system
-   components for tasks like parsing file paths, working with URLs, and
-   handling user input.
-
-2. **Path Manipulation**: It provides functions for working with file and
-   directory paths, including functions for combining, splitting, and
-   normalizing paths. These functions help ensure compatibility and
-   consistency when dealing with file system paths across different
-   versions of Windows.
-
-3. **URL Handling**: `shlwapi.dll` includes functions for parsing and manipulating
-   Uniform Resource Locators (URLs), such as extracting components like the
-   protocol, host, path, and query parameters. These functions are used by
-   web browsers, email clients, and other applications that interact with
-   web resources.
-
-4. **File Operations**: It provides functions for performing various file
-   operations, such as copying, moving, deleting, and renaming files. These
-   functions supplement the file management capabilities provided by other
-   system libraries and APIs.
-
-5. **Registry Operations**: `shlwapi.dll` includes functions for working with the
-   Windows Registry, such as reading and writing registry keys and values.
-   These functions are used by applications and system components to store
-   and retrieve configuration settings and other persistent data.
 
 ## What of the registry does a shell extension use?
 

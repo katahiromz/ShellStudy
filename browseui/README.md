@@ -10,6 +10,12 @@ See:
 
 - [$(REACTOS)/dll/win32/browseui](https://github.com/reactos/reactos/tree/master/dll/win32/browseui)
 
+## Where is the function list of `browseui.dll`?
+
+See:
+
+- [$(REACTOS)/dll/win32/browseui/browseui.spec](https://github.com/reactos/reactos/tree/master/dll/win32/browseui/browseui.spec)
+
 ---
 
 [Back](../README.md)

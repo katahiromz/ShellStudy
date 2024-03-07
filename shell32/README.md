@@ -40,6 +40,12 @@ See:
 
 - [$(REACTOS)/dll/win32/shell32](https://github.com/reactos/reactos/tree/master/dll/win32/shell32) .
 
+## Where is the function list of `shell32.dll`?
+
+See:
+
+- [$(REACTOS)/dll/win32/shell32/shell32.spec](https://github.com/reactos/reactos/tree/master/dll/win32/shell32/shell32.spec)
+
 ---
 
 [Back](../README.md)

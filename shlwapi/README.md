@@ -42,6 +42,12 @@ See:
 
 - [$(REACTOS)/dll/win32/shlwapi](https://github.com/reactos/reactos/tree/master/dll/win32/shlwapi)
 
+## Where is the function list of `shlwapi.dll`?
+
+See:
+
+- [$(REACTOS)/dll/win32/shlwapi/shlwapi.spec](https://github.com/reactos/reactos/tree/master/dll/win32/shlwapi/shlwapi.spec)
+
 ---
 
 [Back](../README.md)

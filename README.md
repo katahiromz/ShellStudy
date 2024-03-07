@@ -86,9 +86,9 @@ functioning of the Windows shell and many of its associated features and compone
 
 ## What is `browseui.dll`?
 
-`browseui.dll` is a component of the Microsoft Windows operating system. It stands
-for "Browse User Interface" and is primarily associated with the graphical user
-interface (GUI) elements related to browsing files and folders.
+`browseui.dll` is a component of Windows. It stands for "Browse User Interface" and
+is primarily associated with the graphical user interface (GUI) elements related to
+browsing files and folders.
 
 ## What is "shell extension" in Windows?
 
@@ -167,11 +167,10 @@ and applications to work with files, folders, and other resources.
 ## What is shortcut (`.LNK`) file?
 
 A shortcut file, often denoted by the file extension `".LNK"`, is a type of
-file in Microsoft Windows operating systems that serves as a pointer or
-reference to another file, folder, application, or resource on the system.
-Instead of containing the actual data of the target item, a shortcut file
-stores information about the location and properties of the target, allowing
-users to access it quickly and conveniently.
+file in Windows that serves as a pointer or reference to another file, folder,
+application, or resource on the system. Instead of containing the actual data
+of the target item, a shortcut file stores information about the location and
+properties of the target, allowing users to access it quickly and conveniently.
 
 Here are some key points about shortcut (`.LNK`) files:
 

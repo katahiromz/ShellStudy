@@ -128,6 +128,8 @@ See also:
 
 - [$(REACTOS)/sdk/include/psdk/shlguid.h](https://github.com/reactos/reactos/tree/master/sdk/include/psdk/shlguid.h)
 
+You can convert representation of GUID by [katahiromz/refguid](https://github.com/katahiromz/refguid).
+
 ---
 
 [Back](../README.md)

@@ -9,6 +9,7 @@
 - `Win2k3` ― Windows Server 2003.
 - `Win:user32!MessageBoxW` ― The `MessageBoxW` function in Windows `user32.dll`.
 - `Ros:user32!MessageBoxW` ― The `MessageBoxW` function in ReactOS `user32.dll`.
+- `$(REACTOS)` ― ReactOS repository.
 
 ## Components
 
@@ -197,7 +198,7 @@ Here are some key points about shortcut (`.`LNK) files:
 ## What is `shlwapi.dll`?
 
 `shlwapi.dll` is a Dynamic Link Library (DLL) file in Microsoft Windows
-operating systems. The name stands for "Shell Light-weight Utility Library"
+operating systems. The name stands for `"Shell Light-Weight utility library"`
 API. It contains a collection of utility functions and APIs (Application
 Programming Interfaces) that provide various functionalities related to the
 Windows shell and other system components.

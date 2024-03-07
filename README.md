@@ -450,10 +450,6 @@ Some of the most commonly used macros include:
     {
         // Operation succeeded
     }
-    else
-    {
-        // Handle error
-    }
     ```
 
 2. **`FAILED`**: This macro checks whether an `HRESULT` value represents a
@@ -470,10 +466,6 @@ Some of the most commonly used macros include:
     if (FAILED(hr))
     {
         // Handle error
-    }
-    else
-    {
-        // Operation succeeded
     }
     ```
 

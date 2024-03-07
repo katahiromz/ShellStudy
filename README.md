@@ -351,6 +351,7 @@ See also:
 - [CoInitialize function](https://learn.microsoft.com/en-us/windows/win32/api/objbase/nf-objbase-coinitialize) - Microsoft Learn
 - [CoInitializeEx function](https://learn.microsoft.com/en-us/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) - Microsoft Learn
 - [CoUninitialize function](https://learn.microsoft.com/en-us/windows/win32/api/combaseapi/nf-combaseapi-couninitialize) - Microsoft Learn
+- [CoCreateInstance](https://learn.microsoft.com/en-us/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) - Microsoft Learn
 - [IUnknown interface](https://learn.microsoft.com/en-us/windows/win32/api/unknwn/nn-unknwn-iunknown) - Microsoft Learn
 
 ## What is `HRESULT`?

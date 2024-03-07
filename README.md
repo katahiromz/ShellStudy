@@ -618,8 +618,8 @@ Here's how you can register a COM component in ATL programming:
 
    ```cxx
    BEGIN_OBJECT_MAP(ObjectMap)
-       OBJECT_ENTRY(CLSID_YOURCLASS1, YourClass1)
-       OBJECT_ENTRY(CLSID_YOURCLASS2, YourClass2)
+       OBJECT_ENTRY(CLSID_YourClass1, YourClass1)
+       OBJECT_ENTRY(CLSID_YourClass2, YourClass2)
        ...
    END_OBJECT_MAP()
    ```

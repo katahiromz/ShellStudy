@@ -45,7 +45,7 @@ See:
 - [winxp-shell32.dll.dumpbin.txt](winxp-shell32.dll.dumpbin.txt)
 - [win2k3-shell32.dll.dumpbin.txt](win2k3-shell32.dll.dumpbin.txt)
 
-See also:
+## ReactOS spec file
 
 - [$(REACTOS)/dll/win32/shell32/shell32.spec](https://github.com/reactos/reactos/tree/master/dll/win32/shell32/shell32.spec)
 

@@ -63,20 +63,24 @@ Here are some of the key functions and features provided by `shell32.dll`:
 1. **User interface elements**: `shell32.dll` contains resources and functions used
    to create various user interface elements, such as icons, dialog boxes, menus,
    and controls, which are integral parts of the Windows shell.
+
 2. **File management**: It provides functions for file and folder manipulation,
    including copying, moving, deleting, renaming, and accessing properties of
    files and folders. These functions are used by applications and the operating
    system itself to manage files and folders.
+
 3. **Shell extensions**: `shell32.dll` includes functions and interfaces that allow
    developers to create shell extensions, which are components that extend the
    functionality of the Windows shell. Shell extensions can add custom features,
    context menu options, icon overlays, and other enhancements to the user
    interface.
+
 4. **Shell namespace**: `shell32.dll` implements the shell namespace, which is a
    hierarchical structure used to organize and represent various system and
    user-defined objects, such as files, folders, drives, printers, and network
    resources. This namespace is used by File Explorer and other shell-related
    components to navigate and manipulate objects in the file system and beyond.
+
 5. **Shortcut (`.lnk`) handling**: It provides functions for creating, resolving,
    and manipulating shortcut files (`.lnk` files), which are used to represent
    links to files, folders, applications, and other resources.
@@ -140,20 +144,24 @@ Key features and concepts related to the shell namespace include:
    container. For example, the root of the namespace typically represents the
    entire computer system, with branches representing drives, folders, and
    individual files.
+
 2. **Integration with File Explorer**: The shell namespace is tightly integrated
    with File Explorer, the file management application in Windows. File Explorer
    uses the shell namespace to display the contents of drives and folders,
    allowing users to navigate and manipulate files and folders using a familiar interface.
+
 3. **Special folders**: The shell namespace includes special folders, such as
    `"My Computer"`, `"Desktop"`, `"Documents"`, `"Downloads"`, and others,
    which provide convenient access to commonly used locations on the system.
    These special folders are virtual representations that can include both
    physical and virtual items.
+
 4. **Virtual objects**: In addition to physical objects such as files and folders,
    the shell namespace can also include virtual objects that represent
    dynamically generated or transient items. For example, the
    `"Control Panel"` and `"Network Neighborhood"` folders are virtual folders
    that display system settings and network resources, respectively.
+
 5. **Namespace extensions**: Developers can extend the shell namespace by creating
    namespace extensions, which are components that provide custom views or
    representations of objects within the namespace. Namespace extensions allow
@@ -177,19 +185,23 @@ Here are some key points about shortcut (`.LNK`) files:
 1. **Icon**: Shortcut files typically have a distinct icon overlay to
    differentiate them from regular files or folders. This icon often
    includes a small arrow or shortcut symbol to indicate that it is a shortcut.
+
 2. **Properties**: Shortcut files contain various properties and attributes that
    specify information about the target item, such as its location (path),
    filename, icon, and any command-line arguments or parameters needed to
    open the target.
+
 3. **Creation**: Users can create shortcut files manually by right-clicking on an
    item (such as a file, folder, or application) and selecting the
    `"Create shortcut"` option from the context menu. Additionally, some
    applications automatically create shortcuts during installation to provide
    easy access to their executable files or resources.
+
 4. **Accessibility**: Shortcut files provide a convenient way for users to access
    frequently used items or resources without having to navigate through the
    file system to find them. Users can place shortcut files on the desktop,
    in the Start menu, or in other locations for easy access.
+
 5. **Versatility**: Shortcut files can point to various types of targets, including
    files, folders, applications, documents, web pages, network resources, and
    more. This versatility allows users to create shortcuts to a wide range of
@@ -210,20 +222,24 @@ Here are some key functions and features provided by `shlwapi.dll`:
    string-handling functions are often used by applications and system
    components for tasks like parsing file paths, working with URLs, and
    handling user input.
+
 2. **Path Manipulation**: It provides functions for working with file and
    directory paths, including functions for combining, splitting, and
    normalizing paths. These functions help ensure compatibility and
    consistency when dealing with file system paths across different
    versions of Windows.
+
 3. **URL Handling**: `shlwapi.dll` includes functions for parsing and manipulating
    Uniform Resource Locators (URLs), such as extracting components like the
    protocol, host, path, and query parameters. These functions are used by
    web browsers, email clients, and other applications that interact with
    web resources.
+
 4. **File Operations**: It provides functions for performing various file
    operations, such as copying, moving, deleting, and renaming files. These
    functions supplement the file management capabilities provided by other
    system libraries and APIs.
+
 5. **Registry Operations**: `shlwapi.dll` includes functions for working with the
    Windows Registry, such as reading and writing registry keys and values.
    These functions are used by applications and system components to store
@@ -242,20 +258,25 @@ key areas of the registry that shell extensions commonly use:
       with those file types.
    - `HKEY_CLASSES_ROOT\filetype\shell`: This key is used to register context
       menu entries for specific file type `filetype`.
+
 2. **Context Menu Entries**:
    - `HKEY_CLASSES_ROOT\*\shell` and `HKEY_CLASSES_ROOT\Directory\shell`:
       These keys are used by context menu extensions to register context
       menu entries for all file types and directories, respectively.
+
 3. **Icon Overlays**:
    - `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers`:
      Icon overlay extensions register here to specify their icon overlays.
+
 4. **Property Sheet Extensions**:
    - `HKEY_CLASSES_ROOT\filetype\shellex\PropertySheetHandlers`: Shell extensions
       that add custom property sheet pages register here to integrate with
       the Properties dialog of files.
+
 5. **Thumbnail Handlers**:
    - `HKEY_CLASSES_ROOT\filetype\shellex\{BB2E617C-0920-11d1-9A0B-00C04FC2D6C1}`: Thumbnail handlers
       register here to provide thumbnail images for specific file type `file type`.
+
 6. **Other Shell Extensions**:
    - `HKEY_CLASSES_ROOT\CLSID`: Shell extensions that don't fit into the
       above categories often register under this key using their
@@ -281,6 +302,7 @@ purposes and are defined as follows:
      digits separated by hyphens, such as `"{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}"`.
    - GUIDs are generated using algorithms that ensure their uniqueness
      across different systems and environments.
+
 2. **IID (Interface Identifier)**:
    - An IID is a specific type of GUID used to uniquely identify COM
      (Component Object Model) interfaces in Windows programming.
@@ -289,6 +311,7 @@ purposes and are defined as follows:
    - IIDs are defined in the Windows SDK (Software Development Kit)
      header files and are typically represented as constant values defined
      using the `DEFINE_GUID` macro.
+
 3. **CLSID (Class Identifier)**:
    - A CLSID is another type of GUID used to uniquely identify COM
      classes, which are implementations of COM objects.
@@ -324,24 +347,29 @@ Key features and concepts of COM include:
    clients can use to interact with the component. Interfaces are
    language-neutral and define a standard way for clients to communicate
    with components.
+
 2. **Objects**: COM components are implemented as objects, which
    encapsulate data and behavior and expose functionality through
    interfaces. Objects can be created, manipulated, and destroyed at
    runtime, and they provide a way to organize and encapsulate complex
    functionality.
+
 3. **Binary Compatibility**: COM components provide binary compatibility,
    which means that clients can use components without needing to know how
    they are implemented internally. This allows components to be upgraded
    or replaced without affecting client code, as long as the interfaces
    remain unchanged.
+
 4. **Late Binding**: COM supports late binding, allowing clients to
    discover and use interfaces at runtime without needing to know their
    details at compile time. This enables dynamic composition of software
    components and supports scenarios such as scripting and automation.
+
 5. **Registration**: COM components are registered in the Windows Registry,
    where information about their classes, interfaces, and other properties
    is stored. Registration allows clients to locate and instantiate
    components dynamically at runtime.
+
 6. **Marshaling**: COM provides mechanisms for marshaling data and
    interfaces between different processes or across network boundaries.
    This allows components to communicate across process boundaries and
@@ -363,33 +391,41 @@ Some of the key functions and concepts of COM include:
    Registry, where information about their classes, interfaces, and other
    properties is stored. Registration allows clients to locate and instantiate
    components dynamically at runtime.
+
 2. **Interfaces**: COM components expose functionality through interfaces,
    which define a contract specifying the methods and properties that clients
    can use to interact with the component. Interfaces are language-neutral
    and define a standard way for clients to communicate with components.
+
 3. **Object Creation**: COM provides mechanisms for creating and managing
    instances of objects. Clients can create objects using factory functions,
    class factories, or other instantiation methods provided by the component.
+
 4. **Lifetime Management**: COM components implement reference counting to
    manage their lifetime. Clients can add references to objects using the
    `AddRef` method and release references using the `Release` method. When
    the reference count reaches zero, the object is automatically destroyed.
+
 5. **Query Interface**: COM provides the `QueryInterface` method, which allows
    clients to query a component for specific interfaces it supports. This
    allows clients to dynamically discover and use interfaces provided by
    components at runtime.
+
 6. **Marshaling**: COM provides mechanisms for marshaling data and interfaces
    between different processes or across network boundaries. This allows
    components to communicate across process boundaries and enables
    distributed computing scenarios.
+
 7. **Threading Models**: COM supports different threading models, including
    single-threaded apartment (STA), multi-threaded apartment (MTA), and
    free-threaded apartment (FTA). Threading models define how objects can
    be accessed and used in different threading environments.
-8. **Error Handling**: COM components return HRESULT values to indicate
+
+8. **Error Handling**: COM components return `HRESULT` values to indicate
    the success or failure of operations. Error codes are standardized and
    provide detailed information about the cause of an error, allowing
    clients to handle errors gracefully.
+
 9. **Activation Contexts**: COM provides activation contexts, which allow
    clients to specify additional context information when activating objects.
    Activation contexts can be used to control aspects such as security,
@@ -407,6 +443,7 @@ In general, `HRESULT` values can be divided into two categories:
 
 1. **Success Codes**: `HRESULT` values where bit 31 is set to 0, indicating
    that the function call succeeded. Success codes typically have a value of 0 or a positive integer.
+
 2. **Error Codes**: `HRESULT` values where bit 31 is set to 1, indicating
    that the function call failed. Error codes typically have negative
    values, but they can vary depending on the facility code and error code.
@@ -417,15 +454,19 @@ Here are some of the typical `HRESULT` values used in Windows programming:
 
 1. **`S_OK`**: This value indicates that the operation completed successfully.
    It is commonly returned by functions to indicate successful execution.
+
 2. **`E_FAIL`**: This value indicates that the operation failed for unspecified
    reasons. It is a generic error code used when no specific error
    information is available.
+
 3. **`E_INVALIDARG`**: This value indicates that one or more arguments
    passed to a function are invalid. It is commonly used to indicate
    parameter validation failures.
+
 4. **`E_OUTOFMEMORY`**: This value indicates that the operation failed
    due to insufficient memory. It is commonly returned when memory
    allocation or other resource allocation fails.
+
 5. **`E_NOINTERFACE`**: This value indicates that the requested interface
    is not supported by the object. It is commonly returned by the
    `QueryInterface` method when the requested interface cannot be obtained.

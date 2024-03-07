@@ -121,10 +121,10 @@ and applications to work with files, folders, and other resources.
 
 ## What is shortcut (`.LNK`) file?
 
-A shortcut file, often denoted by the file extension `".LNK"`, is a type of
-file in Windows that serves as a pointer or reference to another file, folder,
-application, or resource on the system. Instead of containing the actual data
-of the target item, a shortcut file stores information about the location and
+A shortcut file, or shell link, often denoted by the file extension `".LNK"`,
+is a type of file in Windows that serves as a pointer or reference to another file,
+folder, application, or resource on the system. Instead of containing the actual
+data of the target item, a shortcut file stores information about the location and
 properties of the target, allowing users to access it quickly and conveniently.
 
 Here are some key points about shortcut (`.LNK`) files:
@@ -153,6 +153,12 @@ Here are some key points about shortcut (`.LNK`) files:
    files, folders, applications, documents, web pages, network resources, and
    more. This versatility allows users to create shortcuts to a wide range of
    items and resources on their system.
+
+See:
+
+- [$(REACTOS)/dll/cpl/appwiz/createlink.c](https://github.com/reactos/reactos/tree/master/dll/cpl/appwiz/createlink.c)
+- [$(REACTOS)/dll/win32/shell32/CShellLink.h](https://github.com/reactos/reactos/tree/master/dll/win32/shell32/CShellLink.h)
+- [$(REACTOS)/dll/win32/shell32/CShellLink.cpp](https://github.com/reactos/reactos/tree/master/dll/win32/shell32/CShellLink.cpp)
 
 ## What of the registry does a shell extension use?
 

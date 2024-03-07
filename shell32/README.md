@@ -54,6 +54,78 @@ See also:
 - [winxp-shell32.dll-resource](winxp-shell32.dll-resource)
 - [win2k3-shell32.dll-resource](win2k3-shell32.dll-resource)
 
+## What is the major difference between CreateProcess and ShellExecute?
+
+The major difference between `CreateProcess` and `ShellExecute` lies in
+their intended usage and functionality:
+
+1. **CreateProcess**:
+   - `kernel32!CreateProcess` is a lower-level function used to create
+     a new process and execute an executable file or command-line
+     application.
+   - It provides precise control over the creation and execution of
+     the new process, allowing you to specify various parameters such
+     as the executable path, command-line arguments, process creation
+     flags, and environment variables.
+   - `CreateProcess` does not handle file associations or shell verbs,
+     and it does not invoke shell features such as file type associations,
+     verb execution, or URL handling.
+
+2. **ShellExecute**:
+   - `shell32!ShellExecute` is a higher-level function used to execute a
+     specified file or perform an operation on a specified file or folder.
+   - It is designed to invoke shell features such as file type associations,
+     verb execution, and URL handling, allowing you to open files with their
+     associated applications, explore folders, launch URLs in the default
+     web browser, and perform other shell-related tasks.
+   - `ShellExecute` automatically handles file associations and shell verbs,
+     determining the appropriate action to take based on the file type
+     and the specified verb (e.g., "open", "print", "edit").
+   - `ShellExecute` provides a more user-friendly and integrated experience
+     compared to `CreateProcess`, as it leverages the Windows Shell to
+     execute files and perform operations using the default applications
+     and settings configured by the user.
+
+## What is `shell:ControlPanelFolder`?
+
+`shell:ControlPanelFolder` is a special shell namespace item (also known as
+a shell namespace GUID) in Windows that represents the Control Panel folder.
+It is a virtual folder within the Windows Shell that provides access to
+various system settings and configuration options.
+
+For example, typing shell:ControlPanelFolder in the Run dialog
+(Windows key + R) and pressing Enter will open the Control Panel window.
+
+## Please tell me well-known special shell namespace items
+
+- `shell:ControlPanelFolder`
+- `shell:MyComputerFolder`
+- `shell:RecycleBinFolder`
+- `shell:NetworkPlacesFolder`
+- `shell:PrintersFolder`
+- `shell:UserProfile`
+- `shell:CommonPrograms`
+- `shell:Desktop`
+- `shell:AppData`
+- `shell:Fonts`
+
+See also:
+
+- [$(REACTOS)/dll/win32/shell32/wine/shellpath.c](https://github.com/reactos/reactos/tree/master/dll/win32/shell32/wine/shellpath.c)
+
+## Please tell me well-known namespace GUIDs
+
+Here are some well-known namespace GUIDs in Windows:
+
+1. **{20D04FE0-3AEA-1069-A2D8-08002B30309D}**: This GUID represents the "My Computer" or "This PC" namespace, which contains information about drives, devices, and network locations.
+2. **{450D8FBA-AD25-11D0-98A8-0800361B1103}**: This GUID represents the "My Documents" namespace, which contains user-specific documents and files.
+3. **{645FF040-5081-101B-9F08-00AA002F954E}**: This GUID represents the "Recycle Bin" namespace, which contains deleted files and folders.
+4. **{21EC2020-3AEA-1069-A2DD-08002B30309D}**: This GUID represents the "Control Panel" namespace, which contains system settings and configuration options.
+
+See also:
+
+- [$(REACTOS)/sdk/include/psdk/shlguid.h](https://github.com/reactos/reactos/tree/master/sdk/include/psdk/shlguid.h)
+
 ---
 
 [Back](../README.md)

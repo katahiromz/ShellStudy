@@ -402,23 +402,6 @@ function call. It is a 32-bit value that indicates whether a function call
 succeeded or failed and, if it failed, provides additional information about
 the cause of the failure.
 
-The `HRESULT` data type is typically defined as a long integer (32 bits)
-and has the following format:
-
-```
-  31                  0
-  | S |  Facility  | Code |
-```
-
-- **Bit 31 (S)**: Signifies whether the value represents success or failure.
-  If bit 31 is set to 0, the value represents success. If it is set to 1,
-  the value represents failure.
-- **Bits 30-16 (Facility)**: Identifies the facility code, which indicates
-  the source or category of the error. Each facility code corresponds to a
-  particular area of Windows system or application functionality.
-- **Bits 15-0 (Code)**: Specifies the error code within the facility.
-  The meaning of the error code depends on the facility code.
-
 In general, `HRESULT` values can be divided into two categories:
 
 1. **Success Codes**: `HRESULT` values where bit 31 is set to 0, indicating
@@ -426,6 +409,25 @@ In general, `HRESULT` values can be divided into two categories:
 2. **Error Codes**: `HRESULT` values where bit 31 is set to 1, indicating
    that the function call failed. Error codes typically have negative
    values, but they can vary depending on the facility code and error code.
+
+## Please tell me the typical HRESULT values such as `S_OK` and `E_FAIL`
+
+Here are some of the typical `HRESULT` values used in Windows programming:
+
+1. **`S_OK`**: This value indicates that the operation completed successfully.
+   It is commonly returned by functions to indicate successful execution.
+2. **`E_FAIL`**: This value indicates that the operation failed for unspecified
+   reasons. It is a generic error code used when no specific error
+   information is available.
+3. **`E_INVALIDARG`**: This value indicates that one or more arguments
+   passed to a function are invalid. It is commonly used to indicate
+   parameter validation failures.
+4. **`E_OUTOFMEMORY`**: This value indicates that the operation failed
+   due to insufficient memory. It is commonly returned when memory
+   allocation or other resource allocation fails.
+5. **`E_NOINTERFACE`**: This value indicates that the requested interface
+   is not supported by the object. It is commonly returned by the
+   `QueryInterface` method when the requested interface cannot be obtained.
 
 ## What macros handle `HRESULT`?
 

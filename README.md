@@ -36,12 +36,12 @@ updates and enhancements to improve usability and functionality.
 
 See:
 
-- [$(REACTOS)/base/shell/explorer](https://github.com/reactos/reactos/tree/master/base/shell/explorer)
-- [$(REACTOS)/base/shell/rshell](https://github.com/reactos/reactos/tree/master/base/shell/rshell)
-- [$(REACTOS)/dll/shellext](https://github.com/reactos/reactos/tree/master/base/dll/shellext)
-- [$(REACTOS)/dll/win32/browseui](https://github.com/reactos/reactos/tree/master/dll/win32/browseui)
-- [$(REACTOS)/dll/win32/shell32](https://github.com/reactos/reactos/tree/master/dll/win32/shell32)
-- [$(REACTOS)/dll/win32/shlwapi](https://github.com/reactos/reactos/tree/master/dll/win32/shlwapi)
+- [`$(REACTOS)/base/shell/explorer`](https://github.com/reactos/reactos/tree/master/base/shell/explorer)
+- [`$(REACTOS)/base/shell/rshell`](https://github.com/reactos/reactos/tree/master/base/shell/rshell)
+- [`$(REACTOS)/dll/shellext`](https://github.com/reactos/reactos/tree/master/base/dll/shellext)
+- [`$(REACTOS)/dll/win32/browseui`](https://github.com/reactos/reactos/tree/master/dll/win32/browseui)
+- [`$(REACTOS)/dll/win32/shell32`](https://github.com/reactos/reactos/tree/master/dll/win32/shell32)
+- [`$(REACTOS)/dll/win32/shlwapi`](https://github.com/reactos/reactos/tree/master/dll/win32/shlwapi)
 
 ## What is "Explorer"?
 
@@ -653,6 +653,8 @@ Here's a brief overview of how `regsvr32.exe` works:
 of COM components, such as ActiveX controls, custom DLLs, and other system
 extensions. It is an essential tool for developers and system administrators
 working with COM-based applications and components in the Windows environment.
+
+See also: [`$(REACTOS)/base/system/regsvr32`](https://github.com/reactos/reactos/tree/master/base/system/regsvr32)
 
 ## How to register a COM component in ATL programming?
 

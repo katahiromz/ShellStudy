@@ -1,5 +1,13 @@
 # Windows Shell Study (ShellStudy) by katahiromz
 
+This is a study about the Windows shell by Katayama Hirofumi MZ.
+
+- [shell32](shell32/README.md)
+- [explorer](explorer/README.md)
+- [browseui](browseui/README.md)
+- [interface](interface/README.md)
+- [tools](tools/README.md)
+
 ## Notation
 
 - `user32!MessageBoxW` ― The `MessageBoxW` function in `user32.dll`.
@@ -10,14 +18,7 @@
 - `Win:user32!MessageBoxW` ― The `MessageBoxW` function in Windows `user32.dll`.
 - `Ros:user32!MessageBoxW` ― The `MessageBoxW` function in ReactOS `user32.dll`.
 - `$(REACTOS)` ― ReactOS repository.
-
-## Components
-
-- [shell32](shell32/README.md)
-- [explorer](explorer/README.md)
-- [browseui](browseui/README.md)
-- [interface](interface/README.md)
-- [tools](tools/README.md)
+- `$(REACTOS)/dll/win32/shell` ― File path `dll/win32/shell` of ReactOS repository.
 
 ## What is "shell" in Windows OS?
 
@@ -352,6 +353,161 @@ of software components, including libraries, controls, services, and
 applications. It forms the foundation for other Microsoft technologies
 such as ActiveX, OLE (Object Linking and Embedding), and OLE Automation,
 and it continues to be an important part of the Windows platform.
+
+## What are the essential functions of COM?
+
+Some of the key functions and concepts of COM include:
+
+1. **Component Registration**: COM components are registered in the Windows
+   Registry, where information about their classes, interfaces, and other
+   properties is stored. Registration allows clients to locate and instantiate
+   components dynamically at runtime.
+2. **Interfaces**: COM components expose functionality through interfaces,
+   which define a contract specifying the methods and properties that clients
+   can use to interact with the component. Interfaces are language-neutral
+   and define a standard way for clients to communicate with components.
+3. **Object Creation**: COM provides mechanisms for creating and managing
+   instances of objects. Clients can create objects using factory functions,
+   class factories, or other instantiation methods provided by the component.
+4. **Lifetime Management**: COM components implement reference counting to
+   manage their lifetime. Clients can add references to objects using the
+   `AddRef` method and release references using the `Release` method. When
+   the reference count reaches zero, the object is automatically destroyed.
+5. **Query Interface**: COM provides the `QueryInterface` method, which allows
+   clients to query a component for specific interfaces it supports. This
+   allows clients to dynamically discover and use interfaces provided by
+   components at runtime.
+6. **Marshaling**: COM provides mechanisms for marshaling data and interfaces
+   between different processes or across network boundaries. This allows
+   components to communicate across process boundaries and enables
+   distributed computing scenarios.
+7. **Threading Models**: COM supports different threading models, including
+   single-threaded apartment (STA), multi-threaded apartment (MTA), and
+   free-threaded apartment (FTA). Threading models define how objects can
+   be accessed and used in different threading environments.
+8. **Error Handling**: COM components return HRESULT values to indicate
+   the success or failure of operations. Error codes are standardized and
+   provide detailed information about the cause of an error, allowing
+   clients to handle errors gracefully.
+9. **Activation Contexts**: COM provides activation contexts, which allow
+   clients to specify additional context information when activating objects.
+   Activation contexts can be used to control aspects such as security,
+   transaction support, and configuration settings.
+
+## What is `HRESULT`?
+
+`HRESULT` stands for "Handle to Result" and is a standardized data type
+used in Microsoft Windows programming to represent the outcome of a
+function call. It is a 32-bit value that indicates whether a function call
+succeeded or failed and, if it failed, provides additional information about
+the cause of the failure.
+
+The `HRESULT` data type is typically defined as a long integer (32 bits)
+and has the following format:
+
+```
+  31                  0
+  | S |  Facility  | Code |
+```
+
+- **Bit 31 (S)**: Signifies whether the value represents success or failure.
+  If bit 31 is set to 0, the value represents success. If it is set to 1,
+  the value represents failure.
+- **Bits 30-16 (Facility)**: Identifies the facility code, which indicates
+  the source or category of the error. Each facility code corresponds to a
+  particular area of Windows system or application functionality.
+- **Bits 15-0 (Code)**: Specifies the error code within the facility.
+  The meaning of the error code depends on the facility code.
+
+In general, `HRESULT` values can be divided into two categories:
+
+1. **Success Codes**: `HRESULT` values where bit 31 is set to 0, indicating
+   that the function call succeeded. Success codes typically have a value of 0 or a positive integer.
+2. **Error Codes**: `HRESULT` values where bit 31 is set to 1, indicating
+   that the function call failed. Error codes typically have negative
+   values, but they can vary depending on the facility code and error code.
+
+## What macros handle `HRESULT`?
+
+In Microsoft Windows programming, there are several macros commonly used to
+handle `HRESULT` values. These macros help developers check the result of
+function calls and handle errors appropriately.
+
+Some of the most commonly used macros include:
+
+1. **`SUCCEEDED`**: This macro checks whether an `HRESULT` value represents a
+   successful operation. It returns `TRUE` if the value's high-order bit (bit 31)
+   is 0, indicating success.
+
+    ```cpp
+    #define SUCCEEDED(hr) (((HRESULT)(hr)) >= 0)
+    ```
+
+    Example usage:
+    ```cpp
+    HRESULT hr = SomeFunction();
+    if (SUCCEEDED(hr))
+    {
+        // Operation succeeded
+    }
+    else
+    {
+        // Handle error
+    }
+    ```
+
+2. **`FAILED`**: This macro checks whether an `HRESULT` value represents a
+   failed operation. It returns true if the value's high-order bit (bit 31) is 1,
+   indicating failure.
+
+    ```cpp
+    #define FAILED(hr) (((HRESULT)(hr)) < 0)
+    ```
+
+    Example usage:
+    ```cpp
+    HRESULT hr = SomeFunction();
+    if (FAILED(hr))
+    {
+        // Handle error
+    }
+    else
+    {
+        // Operation succeeded
+    }
+    ```
+
+3. **`HRESULT_FROM_WIN32`**: This macro converts a Win32 error code (represented
+   as an integer) into an HRESULT value. It combines the Win32 error code with
+   the `FACILITY_WIN32` facility code.
+
+    ```cpp
+    #define HRESULT_FROM_WIN32(x) (x & 0x0000FFFF) | (FACILITY_WIN32 << 16) | 0x80000000
+    ```
+
+    Example usage:
+    ```cpp
+    DWORD dwError = GetLastError();
+    HRESULT hr = HRESULT_FROM_WIN32(dwError);
+    ```
+
+4. **`HRESULT_CODE`**: This macro extracts the error code portion (bits 15-0)
+   from an `HRESULT` value.
+
+    ```cpp
+    #define HRESULT_CODE(hr) ((hr) & 0xFFFF)
+    ```
+
+    Example usage:
+    ```cpp
+    HRESULT hr = SomeFunction();
+    DWORD dwErrorCode = HRESULT_CODE(hr);
+    ```
+
+These macros are commonly used in Windows programming to simplify error handling
+and make code more readable and maintainable. They help developers check the
+result of function calls, handle errors, and extract error information from
+`HRESULT` values.
 
 (Under construction)
 

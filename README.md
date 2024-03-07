@@ -1,4 +1,4 @@
-# Windows Shell Study (ShellStudy) by katahiromz
+# Windows Shell Study by katahiromz
 
 This is a personal study about the Windows shell by Katayama Hirofumi MZ.
 

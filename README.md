@@ -474,8 +474,12 @@ Some of the most commonly used macros include:
    the `FACILITY_WIN32` facility code.
 
     ```cxx
-    #define HRESULT_FROM_WIN32(x) (x & 0x0000FFFF) | (FACILITY_WIN32 << 16) | 0x80000000
+    #define FACILITY_WIN32 7
+    #define HRESULT_FROM_WIN32(x) (x ? ((HRESULT) (((x) & 0x0000FFFF) | (FACILITY_WIN32 << 16) | 0x80000000)) : 0)
     ```
+
+    Therefore, `HRESULT_FROM_WIN32(...)` becomes a `HRESULT` value that can
+    be represented as `0x8007XXXX` or `S_OK` (0).
 
     Example usage:
     ```cxx

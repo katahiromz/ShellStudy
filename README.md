@@ -1,13 +1,6 @@
 # Windows Shell Study (ShellStudy) by katahiromz
 
-This is a study about the Windows shell by Katayama Hirofumi MZ.
-
-- [shell32](shell32/README.md)
-- [explorer](explorer/README.md)
-- [browseui](browseui/README.md)
-- [shlwapi](browseui/README.md)
-- [interface](interface/README.md)
-- [tools](tools/README.md)
+This is a personal study about the Windows shell by Katayama Hirofumi MZ.
 
 ## Notation
 
@@ -34,6 +27,15 @@ as opposed to using only command-line interfaces. It enables users to perform va
 such as launching applications, managing files, configuring system settings, and more, all
 through a visual interface. Over the years, the Windows shell has undergone significant
 updates and enhancements to improve usability and functionality.
+
+See:
+
+- [browseui](browseui/README.md)
+- [explorer](explorer/README.md)
+- [shell32](shell32/README.md)
+- [shlwapi](browseui/README.md)
+- [interface](interface/README.md)
+- [tools](tools/README.md)
 
 ## What is "shell extension" in Windows?
 

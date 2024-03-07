@@ -748,4 +748,5 @@ if (SUCCEEDED(hr)) // Success!
 
 ## Copyright
 
-- Copyright © 2024 katahiromz. All Rights Reserved.
+- Copyright © 2024 katahiromz.
+- Some auto-generated data is copyrighted by Microsoft.

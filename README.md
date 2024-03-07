@@ -774,4 +774,4 @@ if (SUCCEEDED(hr)) // Success!
 ## Copyright
 
 - Copyright © 2024 katahiromz.
-- Some auto-generated data is copyrighted by Microsoft.
+- Some auto-generated resource data is copyrighted by Microsoft. You may not use them directly in your products.

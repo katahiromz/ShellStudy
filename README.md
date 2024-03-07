@@ -747,6 +747,36 @@ STDAPI DllGetClassObject(REFCLSID rclsid, REFIID riid, LPVOID *ppv)
 }
 ```
 
+## How to use `QueryInterface`?
+
+```cxx
+// Query for the IID of the desired interface
+IMyInterface *pMyInterface = NULL;
+HRESULT hr = pUnknown->QueryInterface(IID_IMyInterface, (void**)&pMyInterface);
+if (SUCCEEDED(hr)) // Success!
+{
+    // Use pMyInterface...
+    pMyInterface->SomeMethod();
+
+    // Release the interface when done
+    pMyInterface->Release();
+}
+```
+
+Or:
+
+```
+CComPtr<IMyInterface> pMyInterface;
+HRESULT hr = pUnknown->QueryInterface(IID_IMyInterface, (void**)&pMyInterface);
+if (SUCCEEDED(hr)) // Success!
+{
+    // Use pMyInterface...
+    pMyInterface->SomeMethod();
+
+    // pMyInterface will be automatically released.
+}
+```
+
 ## References
 
 - Win32 Programmer's Reference

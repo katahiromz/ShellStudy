@@ -224,8 +224,7 @@ purposes and are defined as follows:
    - Each COM interface has a unique IID associated with it, which is
      used by clients to query and interact with the interface.
    - IIDs are defined in the Windows SDK (Software Development Kit)
-     header files and are typically represented as constant values defined
-     using the `DEFINE_GUID` macro.
+     header files.
 
 3. **CLSID (Class Identifier)**:
    - A CLSID is another type of GUID used to uniquely identify COM
@@ -235,8 +234,9 @@ purposes and are defined as follows:
    - CLSIDs are registered in the Windows Registry along with
      information about the associated COM class, including the
      location of the class's executable code.
-   - Like IIDs, CLSIDs are defined in the Windows SDK header files
-     and are represented as constant values defined using the `DEFINE_GUID` macro.
+
+A GUID can typically represented as constant values defined using the
+`DEFINE_GUID` macro.
 
 In summary, GUIDs, IIDs, and CLSIDs are unique identifiers used in
 Windows programming to uniquely identify various entities such as
@@ -345,6 +345,13 @@ Some of the key functions and concepts of COM include:
    clients to specify additional context information when activating objects.
    Activation contexts can be used to control aspects such as security,
    transaction support, and configuration settings.
+
+See also:
+
+- [CoInitialize function](https://learn.microsoft.com/en-us/windows/win32/api/objbase/nf-objbase-coinitialize) - Microsoft Learn
+- [CoInitializeEx function](https://learn.microsoft.com/en-us/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) - Microsoft Learn
+- [CoUninitialize function](https://learn.microsoft.com/en-us/windows/win32/api/combaseapi/nf-combaseapi-couninitialize) - Microsoft Learn
+- [IUnknown interface](https://learn.microsoft.com/en-us/windows/win32/api/unknwn/nn-unknwn-iunknown) - Microsoft Learn
 
 ## What is `HRESULT`?
 

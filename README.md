@@ -353,6 +353,8 @@ applications. It forms the foundation for other Microsoft technologies
 such as ActiveX, OLE (Object Linking and Embedding), and OLE Automation,
 and it continues to be an important part of the Windows platform.
 
+See also `REF005`.
+
 ## What are the essential functions of COM?
 
 Some of the key functions and concepts of COM include:
@@ -776,10 +778,11 @@ if (SUCCEEDED(hr)) // Success!
 
 ## References
 
-- Win32 Programmer's Reference
-- [Geoff Chappell, Software Analyst](https://geoffchappell.com/studies/windows/)
-- [Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/learnwin32/learn-to-program-for-windows)
-- [The Old New Thing](https://devblogs.microsoft.com/oldnewthing/)
+- `REF001`: Win32 Programmer's Reference
+- `REF002`: [Geoff Chappell, Software Analyst](https://geoffchappell.com/studies/windows/)
+- `REF003`: [Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/learnwin32/learn-to-program-for-windows)
+- `REF004`: [The Old New Thing](https://devblogs.microsoft.com/oldnewthing/)
+- `REF005`: [Component Object Model - Wikipedia](https://en.wikipedia.org/wiki/Component_Object_Model)
 
 ## License
 

@@ -388,26 +388,26 @@ In general, `HRESULT` values can be divided into two categories:
    that the function call failed. Error codes typically have negative
    values, but they can vary depending on the facility code and error code.
 
-## Please tell me the typical HRESULT values
+## Please tell me the typical `HRESULT` values
 
 Here are some of the typical `HRESULT` values used in Windows programming:
 
-1. **`S_OK`**: This value indicates that the operation completed successfully.
+1. **`S_OK`** (`0`): This value indicates that the operation completed successfully.
    It is commonly returned by functions to indicate successful execution.
 
-2. **`E_FAIL`**: This value indicates that the operation failed for unspecified
+2. **`E_FAIL`** (`0x80004005` or `-2147467259`): This value indicates that the operation failed for unspecified
    reasons. It is a generic error code used when no specific error
    information is available.
 
-3. **`E_INVALIDARG`**: This value indicates that one or more arguments
+3. **`E_INVALIDARG`** (`0x80070057` or `-2147024809`): This value indicates that one or more arguments
    passed to a function are invalid. It is commonly used to indicate
    parameter validation failures.
 
-4. **`E_OUTOFMEMORY`**: This value indicates that the operation failed
+4. **`E_OUTOFMEMORY`** (`0x8007000E` or `-2147024882`): This value indicates that the operation failed
    due to insufficient memory. It is commonly returned when memory
    allocation or other resource allocation fails.
 
-5. **`E_NOINTERFACE`**: This value indicates that the requested interface
+5. **`E_NOINTERFACE`** (`0x80004002` or `-2147467262`): This value indicates that the requested interface
    is not supported by the object. It is commonly returned by the
    `QueryInterface` method when the requested interface cannot be obtained.
 

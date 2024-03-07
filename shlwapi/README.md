@@ -38,6 +38,10 @@ Here are some key functions and features provided by `shlwapi.dll`:
    These functions are used by applications and system components to store
    and retrieve configuration settings and other persistent data.
 
+See:
+
+- [$(REACTOS)/dll/win32/shlwapi](https://github.com/reactos/reactos/tree/master/dll/win32/shlwapi)
+
 ---
 
 [Back](../README.md)

@@ -36,7 +36,9 @@ Here are some of the key functions and features provided by `shell32.dll`:
 Overall, `shell32.dll` is a core system file that is essential for the proper
 functioning of the Windows shell and many of its associated features and components.
 
-See: [$(REACTOS)/dll/win32/shell32](https://github.com/reactos/reactos/tree/master/dll/win32/shell32) .
+See:
+
+- [$(REACTOS)/dll/win32/shell32](https://github.com/reactos/reactos/tree/master/dll/win32/shell32) .
 
 ---
 

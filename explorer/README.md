@@ -9,7 +9,9 @@ provides a graphical user interface (GUI) for interacting with the file system,
 including features such as browsing directories, copying, moving, renaming,
 deleting files, and creating new folders.
 
-See [$(REACTOS)/base/shell/explorer](https://github.com/reactos/reactos/tree/master/base/shell/explorer) .
+See:
+
+- [$(REACTOS)/base/shell/explorer](https://github.com/reactos/reactos/tree/master/base/shell/explorer) .
 
 ---
 

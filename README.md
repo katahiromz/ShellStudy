@@ -35,15 +35,6 @@ such as launching applications, managing files, configuring system settings, and
 through a visual interface. Over the years, the Windows shell has undergone significant
 updates and enhancements to improve usability and functionality.
 
-See:
-
-- [$(REACTOS)/base/shell/explorer](https://github.com/reactos/reactos/tree/master/base/shell/explorer)
-- [$(REACTOS)/base/shell/rshell](https://github.com/reactos/reactos/tree/master/base/shell/rshell)
-- [$(REACTOS)/dll/shellext](https://github.com/reactos/reactos/tree/master/base/dll/shellext)
-- [$(REACTOS)/dll/win32/browseui](https://github.com/reactos/reactos/tree/master/dll/win32/browseui)
-- [$(REACTOS)/dll/win32/shell32](https://github.com/reactos/reactos/tree/master/dll/win32/shell32)
-- [$(REACTOS)/dll/win32/shlwapi](https://github.com/reactos/reactos/tree/master/dll/win32/shlwapi)
-
 ## What is "shell extension" in Windows?
 
 In Windows, a "shell extension" refers to a type of software component that extends or
@@ -78,6 +69,10 @@ shortcuts, additional functionality, or integration with third-party application
 directly within the Windows shell. However, poorly designed or buggy shell extensions
 can also cause performance issues or instability in the operating system, so it's
 essential to choose and manage them carefully.
+
+See:
+
+- [$(REACTOS)/dll/shellext](https://github.com/reactos/reactos/tree/master/base/dll/shellext)
 
 ## What is "shell namespace"?
 

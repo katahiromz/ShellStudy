@@ -5,7 +5,8 @@
 - [HxD](https://mh-nexus.de/en/hxd/) - Hex Editor
 - [Resource Hacker](https://www.angusj.com/resourcehacker/) by Angus Johnson - Resource Editor
 - [RisohEditor](https://github.com/katahiromz/RisohEditor) by katahiromz - Resource Editor
-- [refguid](https://github.com/katahiromz/refguid) by katahiromz - GUID tool
+- [katahiromz/refguid](https://github.com/katahiromz/refguid) - GUID tool
+- [katahiromz/ShellExecute](https://github.com/katahiromz/ShellExecute) - ShellExecute tester
 
 ---
 
